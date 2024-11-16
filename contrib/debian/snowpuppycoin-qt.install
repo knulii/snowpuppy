@@ -1,0 +1,6 @@
+usr/local/bin/snowpuppycoin-qt usr/bin
+share/pixmaps/snowpuppycoin32.xpm usr/share/pixmaps
+share/pixmaps/snowpuppycoin16.xpm usr/share/pixmaps
+share/pixmaps/snowpuppycoin128.png usr/share/pixmaps
+debian/snowpuppycoin-qt.desktop usr/share/applications
+debian/snowpuppycoin-qt.protocol usr/share/kde4/services/

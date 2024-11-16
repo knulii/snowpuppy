@@ -1,0 +1,22 @@
+QT_TS = \
+  qt/locale/snowpuppycoin_ar.ts \
+  qt/locale/snowpuppycoin_bg.ts \
+  qt/locale/snowpuppycoin_de.ts \
+  qt/locale/snowpuppycoin_en.ts \
+  qt/locale/snowpuppycoin_es.ts \
+  qt/locale/snowpuppycoin_fi.ts \
+  qt/locale/snowpuppycoin_fr.ts \
+  qt/locale/snowpuppycoin_it.ts \
+  qt/locale/snowpuppycoin_ja.ts \
+  qt/locale/snowpuppycoin_ko.ts \
+  qt/locale/snowpuppycoin_nl.ts \
+  qt/locale/snowpuppycoin_pl.ts \
+  qt/locale/snowpuppycoin_pt.ts \
+  qt/locale/snowpuppycoin_ro.ts \
+  qt/locale/snowpuppycoin_ru.ts \
+  qt/locale/snowpuppycoin_sk.ts \
+  qt/locale/snowpuppycoin_th.ts \
+  qt/locale/snowpuppycoin_tr.ts \
+  qt/locale/snowpuppycoin_vi.ts \
+  qt/locale/snowpuppycoin_zh_CN.ts \
+  qt/locale/snowpuppycoin_zh_TW.ts

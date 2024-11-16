@@ -1,0 +1,11 @@
+[Protocol]
+exec=snowpuppycoin-qt '%u'
+protocol=snowpuppycoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/snowpuppycoin_ar.qm</file>
+        <file alias="bg">locale/snowpuppycoin_bg.qm</file>
+        <file alias="de">locale/snowpuppycoin_de.qm</file>
+        <file alias="en">locale/snowpuppycoin_en.qm</file>
+        <file alias="es">locale/snowpuppycoin_es.qm</file>
+        <file alias="fi">locale/snowpuppycoin_fi.qm</file>
+        <file alias="fr">locale/snowpuppycoin_fr.qm</file>
+        <file alias="it">locale/snowpuppycoin_it.qm</file>
+        <file alias="ja">locale/snowpuppycoin_ja.qm</file>
+        <file alias="ko">locale/snowpuppycoin_ko.qm</file>
+        <file alias="nl">locale/snowpuppycoin_nl.qm</file>
+        <file alias="pl">locale/snowpuppycoin_pl.qm</file>
+        <file alias="pt">locale/snowpuppycoin_pt.qm</file>
+        <file alias="ro">locale/snowpuppycoin_ro.qm</file>
+        <file alias="ru">locale/snowpuppycoin_ru.qm</file>
+        <file alias="sk">locale/snowpuppycoin_sk.qm</file>
+        <file alias="th">locale/snowpuppycoin_th.qm</file>
+        <file alias="tr">locale/snowpuppycoin_tr.qm</file>
+        <file alias="vi">locale/snowpuppycoin_vi.qm</file>
+        <file alias="zh_CN">locale/snowpuppycoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/snowpuppycoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

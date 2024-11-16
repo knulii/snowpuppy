@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Snowpuppycoin Core
+Comment=Snowpuppycoin P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Snowpuppycoin peer-to-peer Netzwerk
+Comment[fr]=Snowpuppycoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Snowpuppycoin, eşten eşe kriptografik sanal para birimi
+Exec=snowpuppycoin-qt %u
+Terminal=false
+Type=Application
+Icon=snowpuppycoin128
+MimeType=x-scheme-handler/snowpuppycoin;
+Categories=Office;Finance;
