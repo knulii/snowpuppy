@@ -18,7 +18,6 @@
 #include <key_io.h>
 
 CAmount FounderPayment::getFounderPaymentAmount(int blockHeight, CAmount blockReward) {
-    return 0;
     if (blockHeight <= startBlock) {
         return 0;
     }
@@ -58,7 +57,6 @@ void FounderPayment::FillFounderPayment(CMutableTransaction &txNew, int nBlockHe
 }
 
 bool FounderPayment::IsBlockPayeeValid(const CTransaction &txNew, const int height, const CAmount blockReward) {
-    return true;
     // fill payee with the founder address
     CScript payee = GetScriptForDestination(DecodeDestination(founderAddress));
     const CAmount founderReward = getFounderPaymentAmount(height, blockReward);
