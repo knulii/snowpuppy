@@ -324,7 +324,7 @@ public:
         std::string strExtCoinType = gArgs.GetArg("-extcoinindex", "");
         nExtCoinType = strExtCoinType.empty() ? 200 : std::stoi(strExtCoinType);
 
-        std::vector <FounderRewardStructure> rewardStructures = {{INT_MAX, 10}};// 5% founder/dev fee forever
+        std::vector <FounderRewardStructure> rewardStructures = {{INT_MAX, 10}};// 10% founder/dev fee forever
         consensus.nFounderPayment = FounderPayment(rewardStructures, 250);
         consensus.nCollaterals = SmartnodeCollaterals(
                  {{88720,  1500000 * COIN},
