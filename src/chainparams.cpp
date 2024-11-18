@@ -230,7 +230,7 @@ public:
     CMainParams() {
         strNetworkID = CBaseChainParams::MAIN;
         consensus.nSubsidyHalvingInterval = 210240; // Note: actual number of blocks per calendar year with DGW v3 is ~200700 (for example 449750 - 249050)
-        consensus.nSmartnodePaymentsStartBlock = 4200; //
+        consensus.nSmartnodePaymentsStartBlock = 420; //
         consensus.nSmartnodePaymentsIncreaseBlock = 4210; // actual historical value
         consensus.nSmartnodePaymentsIncreasePeriod = 576 * 30; // 17280 - actual historical value
         consensus.nInstantSendConfirmationsRequired = 6;
@@ -334,7 +334,7 @@ public:
                  {264720,  6000000 * COIN},
                  {INT_MAX, 7000000 * COIN}
                 },
-                {{4200,    0},
+                {{420,    0},
                  {INT_MAX, 10}}
         );
         //FutureRewardShare defaultShare(0.45, 0.45, 0.1);
