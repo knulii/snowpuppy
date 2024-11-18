@@ -610,10 +610,9 @@ jobs:
 
       - name: Install Required Packages
         run: |
-          brew install automake libtool pkg-config librsvg libnatpmp python
+          brew install automake libtool pkg-config librsvg libnatpmp python pipx
           pip3 install ds_store mac_alias
           pip3 install -U pip setuptools
-          brew install pipx
 
       - name: Build Depends
         run: |
