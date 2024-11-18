@@ -432,7 +432,7 @@ jobs:
   test-macos:
     name: macOS Tests
     needs: [get-version, build-macos]
-    runs-on: macos-12
+    runs-on: macos-13
 
     steps:
       - name: Download Artifacts
@@ -457,7 +457,7 @@ jobs:
         uses: mikepenz/action-junit-report@v3
         if: always()
         with:
-          check_name: "macOS 11"
+          check_name: "macOS 13"
           detailed_summary: ${{ steps.Tests.conclusion == 'failure'}}
           include_passed: false
           report_paths: "unit_test_results.xml"
