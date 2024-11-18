@@ -150,7 +150,7 @@ const CLogCategoryDesc LogCategories[] =
                 {BCLog::ALL,         "1"},
                 {BCLog::ALL,         "all"},
 
-                //Start Snowpuppycoin
+                //Start SnowPuppyCoin
                 {BCLog::CHAINLOCKS,  "chainlocks"},
                 {BCLog::GOBJECT,     "gobject"},
                 {BCLog::INSTANTSEND, "instantsend"},
@@ -165,7 +165,7 @@ const CLogCategoryDesc LogCategories[] =
                 {BCLog::QUORUMS,     "quorums"},
                 {BCLog::SPUPC,         "snowpuppycoin"},
                 {BCLog::UPDATES,     "updates"}
-                //End Snowpuppycoin
+                //End SnowPuppyCoin
         };
 
 bool GetLogCategory(BCLog::LogFlags &flag, const std::string &str) {

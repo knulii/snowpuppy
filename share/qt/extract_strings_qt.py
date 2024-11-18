@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2012-2016 The Bitcoin Core developers
-# Copyright (c)     -2022 The Snowpuppycoin developers
+# Copyright (c)     -2022 The SnowPuppyCoin developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or https://opensource.org/licenses/mit-license.php.
 '''

@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2021 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1206,7 +1206,7 @@ static UniValue getsuperblockbudget(const JSONRPCRequest &request) {
 static const CRPCCommand commands[] =
         { //  category              name                      actor (function)         argNames
                 //  --------------------- ------------------------  -----------------------  ----------
-                /* Snowpuppycoin features */
+                /* SnowPuppyCoin features */
                 {"snowpuppycoin", "getgovernanceinfo",   &getgovernanceinfo,   {}},
                 {"snowpuppycoin", "getsuperblockbudget", &getsuperblockbudget, {"index"}},
                 {"snowpuppycoin", "gobject",             &gobject,             {}},

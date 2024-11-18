@@ -1,5 +1,5 @@
 // Copyright (c) 2018-2021 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -112,7 +112,7 @@ static RPCArg GetRpcArg(const std::string &strParamName) {
     static const std::map <std::string, RPCArg> mapParamHelp = {
             {"collateralAddress",
                     {"collateralAddress",       RPCArg::Type::STR,                RPCArg::Optional::NO,
-                            "The Snowpuppycoin address to send the collateral to."}
+                            "The SnowPuppyCoin address to send the collateral to."}
             },
             {"collateralAmount",
                     {"collateralAmount",        RPCArg::Type::NUM,                RPCArg::Optional::NO,
@@ -714,7 +714,7 @@ UniValue protx_register(const JSONRPCRequest& request)
     if (!request.params[paramIdx + 6].isNull()) {
         fundDest = DecodeDestination(request.params[paramIdx + 6].get_str());
         if (!IsValidDestination(fundDest))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Snowpuppycoin address: ") + request.params[paramIdx + 6].get_str());
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid SnowPuppyCoin address: ") + request.params[paramIdx + 6].get_str());
     }
 
     FundSpecialTx(pwallet, tx, ptx, fundDest);
@@ -883,7 +883,7 @@ UniValue protx_update_service(const JSONRPCRequest& request)
     if (!request.params[4].isNull()) {
         feeSource = DecodeDestination(request.params[4].get_str());
         if (!IsValidDestination(feeSource))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Snowpuppycoin address: ") + request.params[4].get_str());
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid SnowPuppyCoin address: ") + request.params[4].get_str());
     } else {
         if (ptx.scriptOperatorPayout != CScript()) {
             // use operator reward address as default source for fees
@@ -979,7 +979,7 @@ UniValue protx_update_registrar(const JSONRPCRequest& request)
     if (!request.params[4].isNull()) {
         feeSourceDest = DecodeDestination(request.params[4].get_str());
         if (!IsValidDestination(feeSourceDest))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Snowpuppycoin address: ") + request.params[4].get_str());
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid SnowPuppyCoin address: ") + request.params[4].get_str());
     }
 
     FundSpecialTx(pwallet, tx, ptx, feeSourceDest);
@@ -1050,7 +1050,7 @@ UniValue protx_revoke(const JSONRPCRequest& request)
     if (!request.params[3].isNull()) {
         CTxDestination feeSourceDest = DecodeDestination(request.params[3].get_str());
         if (!IsValidDestination(feeSourceDest))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Snowpuppycoin address: ") + request.params[3].get_str());
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid SnowPuppyCoin address: ") + request.params[3].get_str());
         FundSpecialTx(pwallet, tx, ptx, feeSourceDest);
     } else if (dmn->pdmnState->scriptOperatorPayout != CScript()) {
         // Using funds from previousely specified operator payout address

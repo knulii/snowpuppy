@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2018-2020 The Dash Core developers
-# Copyright (c) 2020-2022 The Snowpuppycoin developers
+# Copyright (c) 2020-2022 The SnowPuppyCoin developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,7 +15,7 @@ p2p_instantsend.py
 Tests InstantSend functionality (prevent doublespend for unconfirmed transactions)
 '''
 
-class InstantSendTest(SnowpuppycoinTestFramework):
+class InstantSendTest(SnowPuppyCoinTestFramework):
     def set_test_params(self):
         self.set_snowpuppycoin_test_params(9, 5, fast_dip3_enforcement=True)
         # set sender,  receiver,  isolated nodes

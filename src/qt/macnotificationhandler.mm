@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.snowpuppycoin.Snowpuppycoin-Qt";
+        return @"org.snowpuppycoin.SnowPuppyCoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

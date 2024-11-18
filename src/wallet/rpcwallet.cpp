@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2021 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -140,7 +140,7 @@ std::string LabelFromValue(const UniValue &value) {
 
 UniValue getnewaddress(const JSONRPCRequest &request) {
     RPCHelpMan{"getnewaddress",
-               "\nReturns a new Snowpuppycoin address for receiving payments.\n"
+               "\nReturns a new SnowPuppyCoin address for receiving payments.\n"
                "If 'label' is specified, it is added to the address book \n"
                "so payments received with the address will be associated with 'label'.\n",
                {
@@ -193,7 +193,7 @@ UniValue getnewaddress(const JSONRPCRequest &request) {
 
 UniValue getrawchangeaddress(const JSONRPCRequest &request) {
     RPCHelpMan{"getrawchangeaddress",
-               "\nReturns a new Snowpuppycoin address, for receiving change.\n"
+               "\nReturns a new SnowPuppyCoin address, for receiving change.\n"
                "This is for use with raw transactions, NOT normal use.\n",
                {},
                RPCResult{
@@ -259,7 +259,7 @@ UniValue setlabel(const JSONRPCRequest &request) {
 
     CTxDestination dest = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(dest)) {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Snowpuppycoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SnowPuppyCoin address");
     }
 
     std::string old_label = pwallet->mapAddressBook[dest].name;
@@ -294,7 +294,7 @@ SendMoney(CWallet *const pwallet, const CTxDestination &address, CAmount nValue,
         mapValue["DS"] = "1";
     }
 
-    // Parse Snowpuppycoin address
+    // Parse SnowPuppyCoin address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -325,7 +325,7 @@ UniValue sendtoaddress(const JSONRPCRequest &request) {
                "\nSend an amount to a given address." +
                HELP_REQUIRING_PASSPHRASE,
                {
-                       {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The Snowpuppycoin address to send to."},
+                       {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The SnowPuppyCoin address to send to."},
                        {"amount", RPCArg::Type::AMOUNT, RPCArg::Optional::NO,
                         "The amount in " + CURRENCY_UNIT + " to send. eg 0.1"},
                        {"future", RPCArg::Type::OBJ, RPCArg::Optional::OMITTED_NAMED_ARG,
@@ -557,7 +557,7 @@ UniValue signmessage(const JSONRPCRequest &request) {
                HELP_REQUIRING_PASSPHRASE,
                {
                        {"address", RPCArg::Type::STR, RPCArg::Optional::NO,
-                        "The Snowpuppycoin address to use for the private key."},
+                        "The SnowPuppyCoin address to use for the private key."},
                        {"message", RPCArg::Type::STR, RPCArg::Optional::NO, "The message to create a signature of."},
                },
                RPCResult{
@@ -617,7 +617,7 @@ UniValue getreceivedbyaddress(const JSONRPCRequest &request) {
     RPCHelpMan{"getreceivedbyaddress",
                "\nReturns the total amount received by the given address in transactions with at least minconf confirmations.\n",
                {
-                       {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The Snowpuppycoin address for transactions."},
+                       {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The SnowPuppyCoin address for transactions."},
                        {"minconf", RPCArg::Type::NUM, /* default */ "1",
                         "Only include transactions confirmed at least this many times."},
                        {"addlocked", RPCArg::Type::BOOL, /* default */ "false",
@@ -649,10 +649,10 @@ UniValue getreceivedbyaddress(const JSONRPCRequest &request) {
 
     LOCK(pwallet->cs_wallet);
 
-    // Snowpuppycoin address
+    // SnowPuppyCoin address
     CTxDestination dest = DecodeDestination(request.params[0].get_str());
     if (!IsValidDestination(dest)) {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Snowpuppycoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SnowPuppyCoin address");
     }
     CScript scriptPubKey = GetScriptForDestination(dest);
     if (!IsMine(*pwallet, scriptPubKey)) {
@@ -846,7 +846,7 @@ UniValue sendmany(const JSONRPCRequest &request) {
                        {"amounts", RPCArg::Type::OBJ, RPCArg::Optional::NO, "A json object with addresses and amounts",
                         {
                                 {"address", RPCArg::Type::AMOUNT, RPCArg::Optional::NO,
-                                 "The Snowpuppycoin address is the key, the numeric amount (can be string) in " +
+                                 "The SnowPuppyCoin address is the key, the numeric amount (can be string) in " +
                                  CURRENCY_UNIT + " is the value"},
                         },
                        },
@@ -954,7 +954,7 @@ UniValue sendmany(const JSONRPCRequest &request) {
     for (const std::string &name_: keys) {
         CTxDestination dest = DecodeDestination(name_);
         if (!IsValidDestination(dest)) {
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Snowpuppycoin address: ") + name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid SnowPuppyCoin address: ") + name_);
         }
 
         if (destinations.count(dest)) {
@@ -1002,7 +1002,7 @@ UniValue sendmany(const JSONRPCRequest &request) {
 UniValue addmultisigaddress(const JSONRPCRequest &request) {
     RPCHelpMan{"addmultisigaddress",
                "\nAdd a nrequired-to-sign multisignature address to the wallet. Requires a new wallet backup.\n"
-               "Each key is a Snowpuppycoin address or hex-encoded public key.\n"
+               "Each key is a SnowPuppyCoin address or hex-encoded public key.\n"
                "This functionality is only intended for use with non-watchonly addresses.\n"
                "See `importaddress` for watchonly p2sh address support.\n"
                "If 'label' is specified, assign address to that label.\n",
@@ -3223,7 +3223,7 @@ static UniValue listunspent(const JSONRPCRequest &request) {
             CTxDestination dest = DecodeDestination(input.get_str());
             if (!IsValidDestination(dest)) {
                 throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY,
-                                   std::string("Invalid Snowpuppycoin address: ") + input.get_str());
+                                   std::string("Invalid SnowPuppyCoin address: ") + input.get_str());
             }
             if (!destinations.insert(dest).second) {
                 throw JSONRPCError(RPC_INVALID_PARAMETER,
@@ -3473,7 +3473,7 @@ static UniValue fundrawtransaction(const JSONRPCRequest &request) {
                         "for backward compatibility: passing in a true instead of an object will result in {\"includeWatching\":true}",
                         {
                                 {"changeAddress", RPCArg::Type::STR, /* default */ "pool address",
-                                 "The Snowpuppycoin address to receive the change"},
+                                 "The SnowPuppyCoin address to receive the change"},
                                 {"changePosition", RPCArg::Type::NUM, /* default */ "random",
                                  "The index of the change output"},
                                 {"includeWatching", RPCArg::Type::BOOL, /* default */ "false",

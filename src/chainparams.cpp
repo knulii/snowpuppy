@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -83,7 +83,7 @@ CreateDevNetGenesisBlock(const uint256 &prevBlockHash, const std::string &devNet
 
 static CBlock
 CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount &genesisReward) {
-    const char *pszTimestamp = "15/Nov/2024 Snowpuppycoin is here, WOW!";
+    const char *pszTimestamp = "15/Nov/2024 SnowPuppyCoin is here, WOW!";
     const CScript genesisOutputScript = CScript() << ParseHex(
             "040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9")
                                                   << OP_CHECKSIG;
@@ -254,8 +254,8 @@ public:
         consensus.DIP0008Enabled = true;
         consensus.powLimit = uint256S(
                 "00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
-        consensus.nPowTargetTimespan = 24 * 60 * 60; // Snowpuppycoin: 1 day
-        consensus.nPowTargetSpacing = 2 * 60; // Snowpuppycoin: 2 minutes
+        consensus.nPowTargetTimespan = 24 * 60 * 60; // SnowPuppyCoin: 1 day
+        consensus.nPowTargetSpacing = 2 * 60; // SnowPuppyCoin: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowDGWHeight = 60;
@@ -310,17 +310,17 @@ public:
         vSeeds.emplace_back("snowpuppycoin.com");
         vSeeds.emplace_back("0.0.1.1");
 
-        // Snowpuppycoin addresses start with 'S'
+        // SnowPuppyCoin addresses start with 'S'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,63);
-        // Snowpuppycoin script addresses start with '7'
+        // SnowPuppyCoin script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16);
-        // Snowpuppycoin private keys start with '7' or 'X'
+        // SnowPuppyCoin private keys start with '7' or 'X'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 128);
-        // Snowpuppycoin BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // SnowPuppyCoin BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
-        // Snowpuppycoin BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // SnowPuppyCoin BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
-        // Snowpuppycoin BIP44 coin type is '5'
+        // SnowPuppyCoin BIP44 coin type is '5'
         std::string strExtCoinType = gArgs.GetArg("-extcoinindex", "");
         nExtCoinType = strExtCoinType.empty() ? 200 : std::stoi(strExtCoinType);
 
@@ -416,8 +416,8 @@ public:
         // consensus.DIP0003EnforcementHeight = 7300;
         consensus.powLimit = uint256S(
                 "00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
-        consensus.nPowTargetTimespan = 24 * 60 * 60; // Snowpuppycoin: 1 day
-        consensus.nPowTargetSpacing = 60; // Snowpuppycoin: 1 minutes
+        consensus.nPowTargetTimespan = 24 * 60 * 60; // SnowPuppyCoin: 1 day
+        consensus.nPowTargetSpacing = 60; // SnowPuppyCoin: 1 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nPowDGWHeight = 60;
@@ -486,18 +486,18 @@ public:
         vSeeds.emplace_back("0.0.1.1");
         vSeeds.emplace_back("lbtn.snowpuppycoin.com");
 
-        // Testnet Snowpuppycoin addresses start with 'r'
+        // Testnet SnowPuppyCoin addresses start with 'r'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 123);
-        // Testnet Snowpuppycoin script addresses start with '8' or '9'
+        // Testnet SnowPuppyCoin script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);
-        // Testnet Snowpuppycoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet SnowPuppyCoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
-        // Testnet Snowpuppycoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet SnowPuppyCoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        // Testnet Snowpuppycoin BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet SnowPuppyCoin BIP44 coin type is '1' (All coin's testnet default)
         std::string strExtCoinType = gArgs.GetArg("-extcoinindex", "");
         nExtCoinType = strExtCoinType.empty() ? 10227 : std::stoi(strExtCoinType);
 
@@ -587,8 +587,8 @@ public:
         // consensus.DIP0003EnforcementHeight = 2; // DIP0003 activated immediately on devnet
         consensus.powLimit = uint256S(
                 "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 1
-        consensus.nPowTargetTimespan = 24 * 60 * 60; // Snowpuppycoin: 1 day
-        consensus.nPowTargetSpacing = 2 * 60; // Snowpuppycoin: 2 minutes
+        consensus.nPowTargetTimespan = 24 * 60 * 60; // SnowPuppyCoin: 1 day
+        consensus.nPowTargetSpacing = 2 * 60; // SnowPuppyCoin: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowDGWHeight = 60;
@@ -643,18 +643,18 @@ public:
         vSeeds.emplace_back("47.151.26.43");
         //vSeeds.push_back(CDNSSeedData("snowpuppycoinevo.org",  "devnet-seed.snowpuppycoinevo.org"));
 
-        // Testnet Snowpuppycoin addresses start with 'y'
+        // Testnet SnowPuppyCoin addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 140);
-        // Testnet Snowpuppycoin script addresses start with '8' or '9'
+        // Testnet SnowPuppyCoin script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);
-        // Testnet Snowpuppycoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet SnowPuppyCoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
-        // Testnet Snowpuppycoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet SnowPuppyCoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        // Testnet Snowpuppycoin BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet SnowPuppyCoin BIP44 coin type is '1' (All coin's testnet default)
         nExtCoinType = 1;
 
         // long living quorum params
@@ -755,8 +755,8 @@ public:
         // consensus.DIP0003EnforcementHeight = 500;
         consensus.powLimit = uint256S(
                 "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 1
-        consensus.nPowTargetTimespan = 24 * 60 * 60; // Snowpuppycoin: 1 day
-        consensus.nPowTargetSpacing = 2 * 60; // Snowpuppycoin: 2 minutes
+        consensus.nPowTargetTimespan = 24 * 60 * 60; // SnowPuppyCoin: 1 day
+        consensus.nPowTargetSpacing = 2 * 60; // SnowPuppyCoin: 2 minutes
         consensus.nMinimumDifficultyBlocks = 2000;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
@@ -845,18 +845,18 @@ public:
                 0
         };
 
-        // Regtest Snowpuppycoin addresses start with 'y'
+        // Regtest SnowPuppyCoin addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 140);
-        // Regtest Snowpuppycoin script addresses start with '8' or '9'
+        // Regtest SnowPuppyCoin script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);
         // Regtest private keys start with '9' or 'c' (Bitcoin defaults)
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);
-        // Regtest Snowpuppycoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Regtest SnowPuppyCoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
-        // Regtest Snowpuppycoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Regtest SnowPuppyCoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        // Regtest Snowpuppycoin BIP44 coin type is '1' (All coin's testnet default)
+        // Regtest SnowPuppyCoin BIP44 coin type is '1' (All coin's testnet default)
         nExtCoinType = 1;
 
         // long living quorum params

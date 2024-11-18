@@ -49,8 +49,8 @@ $0 --help
   Show this help message and exit.
 
 $0 [ MAKEARGS... ]
-  Build Snowpuppycoin and most of its transitive dependencies from
-  source. MAKEARGS are applied to both dependencies and Snowpuppycoin itself.
+  Build SnowPuppyCoin and most of its transitive dependencies from
+  source. MAKEARGS are applied to both dependencies and SnowPuppyCoin itself.
 
   Pass flags to ./configure using the CONFIGURE_FLAGS environment variable.
   For example, to enable coverage instrumentation (thus enabling "make cov"

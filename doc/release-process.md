@@ -20,7 +20,7 @@ Before every minor and major release:
 
 Before every major release:
 
-* Update hardcoded [seeds](/contrib/seeds/README.md). TODO: Give example PR for Snowpuppycoin
+* Update hardcoded [seeds](/contrib/seeds/README.md). TODO: Give example PR for SnowPuppyCoin
 * Update [`src/chainparams.cpp`](/src/chainparams.cpp) m_assumed_blockchain_size and m_assumed_chain_state_size with the current size plus some overhead.
 * Update `src/chainparams.cpp` chainTxData with statistics about the transaction count and rate. Use the output of the RPC `getchaintxstats`, see
   [this pull request](https://github.com/bitcoin/bitcoin/pull/12270) for an example. Reviewers can verify the results by running `getchaintxstats <window_block_count> <window_last_block_hash>` with the `window_block_count` and `window_last_block_hash` from your output.
@@ -38,7 +38,7 @@ Check out the source code in the following directory hierarchy.
 	git clone https://github.com/devrandom/gitian-builder.git
 	git clone https://github.com/raptor3um/snowpuppycoin.git
 
-### Snowpuppycoin Core maintainers/release engineers, suggestion for writing release notes
+### SnowPuppyCoin Core maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -108,7 +108,7 @@ NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from 
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Snowpuppycoin Core for Linux, Windows, and OS X:
+### Build and sign SnowPuppyCoin Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
     ./bin/gbuild --num-make 2 --memory 3000 --commit snowpuppycoin=v${VERSION} ../snowpuppycoin/contrib/gitian-descriptors/gitian-linux.yml
@@ -267,9 +267,9 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
 - Announce the release:
 
-  - Release on Snowpuppycoin forum: https://www.snowpuppycoin.org/forum/topic/official-announcements.54/
+  - Release on SnowPuppyCoin forum: https://www.snowpuppycoin.org/forum/topic/official-announcements.54/
 
-  - Optionally Discord, twitter, reddit /r/Snowpuppycoin, ... but this will usually sort out itself
+  - Optionally Discord, twitter, reddit /r/SnowPuppyCoin, ... but this will usually sort out itself
 
   - Notify flare so that he can start building [the PPAs](https://launchpad.net/~snowpuppycoin.org/+archive/ubuntu/snowpuppycoin)
 

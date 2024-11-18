@@ -10,10 +10,10 @@
 
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
 
-    <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="Snowpuppycoin">
+    <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="SnowPuppyCoin">
         <activity android:configChanges="orientation|keyboardHidden"
-                  android:name="com.snowpuppycoin.qt.SnowpuppycoinQtActivity"
-                  android:label="Snowpuppycoin"
+                  android:name="com.snowpuppycoin.qt.SnowPuppyCoinQtActivity"
+                  android:label="SnowPuppyCoin"
                   android:icon="@drawable/snowpuppycoin"
                   android:screenOrientation="unspecified"
                   android:launchMode="singleTask">

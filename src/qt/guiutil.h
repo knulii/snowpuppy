@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -53,7 +53,7 @@ class QWidget;
 
 QT_END_NAMESPACE
 
-/** Utility functions used by the Snowpuppycoin Qt UI.
+/** Utility functions used by the SnowPuppyCoin Qt UI.
  */
 namespace GUIUtil {
     /* Enumeration of possible "colors" */

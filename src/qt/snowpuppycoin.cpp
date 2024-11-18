@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2021 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -374,7 +374,7 @@ void BitcoinApplication::shutdownResult() {
 
 void BitcoinApplication::handleRunawayException(const QString &message) {
     QMessageBox::critical(nullptr, "Runaway exception", BitcoinGUI::tr(
-            "A fatal error occurred. Snowpuppycoin Core can no longer continue safely and will quit.") + QString("\n\n") +
+            "A fatal error occurred. SnowPuppyCoin Core can no longer continue safely and will quit.") + QString("\n\n") +
                                                         message);
     ::exit(EXIT_FAILURE);
 }
@@ -427,7 +427,7 @@ static void SetupUIArgs() {
     gArgs.AddArg("-debug-ui",
                  "Updates the UI's stylesheets in realtime with changes made to the css files in -custom-css-dir and forces some widgets to show up which are usually only visible under certain circumstances. (default: 0)",
                  ArgsManager::ALLOW_ANY | ArgsManager::DEBUG_ONLY, OptionsCategory::GUI);
-    gArgs.AddArg("-windowtitle=<name>", _("Sets a window title which is appended to \"Snowpuppycoin Core - \""),
+    gArgs.AddArg("-windowtitle=<name>", _("Sets a window title which is appended to \"SnowPuppyCoin Core - \""),
                  ArgsManager::ALLOW_ANY, OptionsCategory::GUI);
     gArgs.AddArg("-minrefresh",
                  "Minimize UI refreshes.  Fully confirmed transactions will not update with each new block (default: false)",

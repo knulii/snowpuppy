@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2021 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -268,7 +268,7 @@ namespace GUIUtil {
 
         // We don't want translators to use own addresses in translations
         // and this is the only place, where this address is supplied.
-        widget->setPlaceholderText(QObject::tr("Enter a Snowpuppycoin address (e.g. %1)").arg(
+        widget->setPlaceholderText(QObject::tr("Enter a SnowPuppyCoin address (e.g. %1)").arg(
                 QString::fromStdString(DummyAddress(Params()))));
         widget->setValidator(new BitcoinAddressEntryValidator(parent, fAllowURI));
         widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -731,15 +731,15 @@ namespace GUIUtil {
     {
         std::string chain = gArgs.GetChainName();
         if (chain == CBaseChainParams::MAIN)
-            return GetSpecialFolderPath(CSIDL_STARTUP) / "Snowpuppycoin Core.lnk";
+            return GetSpecialFolderPath(CSIDL_STARTUP) / "SnowPuppyCoin Core.lnk";
         if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet4"
-            return GetSpecialFolderPath(CSIDL_STARTUP) / "Snowpuppycoin Core (testnet).lnk";
-        return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Snowpuppycoin Core (%s).lnk", chain);
+            return GetSpecialFolderPath(CSIDL_STARTUP) / "SnowPuppyCoin Core (testnet).lnk";
+        return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("SnowPuppyCoin Core (%s).lnk", chain);
     }
 
     bool GetStartOnSystemStartup()
     {
-        // check for "Snowpuppycoin Core*.lnk"
+        // check for "SnowPuppyCoin Core*.lnk"
         return fs::exists(StartupShortcutPath());
     }
 
@@ -859,9 +859,9 @@ namespace GUIUtil {
             optionFile << "[Desktop Entry]\n";
             optionFile << "Type=Application\n";
             if (chain == CBaseChainParams::MAIN)
-                optionFile << "Name=Snowpuppycoin Core\n";
+                optionFile << "Name=SnowPuppyCoin Core\n";
             else
-                optionFile << strprintf("Name=Snowpuppycoin Core (%s)\n", chain);
+                optionFile << strprintf("Name=SnowPuppyCoin Core (%s)\n", chain);
             optionFile << "Exec=" << pszExePath << strprintf(" -min -testnet=%d -regtest=%d\n", gArgs.GetBoolArg("-testnet", false), gArgs.GetBoolArg("-regtest", false));
             optionFile << "Terminal=false\n";
             optionFile << "Hidden=false\n";

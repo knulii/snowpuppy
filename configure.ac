@@ -6,8 +6,8 @@ define(_CLIENT_VERSION_BUILD, 00)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2024)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Snowpuppycoin Core]])
-AC_INIT([Snowpuppycoin Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_REVISION, m4_if(_CLIENT_VERSION_BUILD, [0], [], _CLIENT_VERSION_BUILD))m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/Raptor3um/snowpuppycoin/issues],[snowpuppycoincore],[https://snowpuppycoin.com/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[SnowPuppyCoin Core]])
+AC_INIT([SnowPuppyCoin Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_REVISION, m4_if(_CLIENT_VERSION_BUILD, [0], [], _CLIENT_VERSION_BUILD))m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/Raptor3um/snowpuppycoin/issues],[snowpuppycoincore],[https://snowpuppycoin.com/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/snowpuppycoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
@@ -177,7 +177,7 @@ AC_ARG_ENABLE([ccache],
 
 dnl Suppress warnings from external headers like Boost, Qt.
 dnl May be useful if warnings from external headers clutter the build output
-dnl too much, so that it becomes difficult to spot Snowpuppycoin Core warnings
+dnl too much, so that it becomes difficult to spot SnowPuppyCoin Core warnings
 dnl or if they cause a build failure with --enable-werror.
 AC_ARG_ENABLE([suppress-external-warnings],
   [AS_HELP_STRING([--enable-suppress-external-warnings], [Suppress warnings from external headers (default is no)])],

@@ -97,13 +97,13 @@
         <context-group purpose="location"><context context-type="linenumber">90</context></context-group>
       </trans-unit>
       <trans-unit id="_msg19" approved="yes">
-        <source xml:space="preserve">These are your Snowpuppycoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <target xml:space="preserve">These are your Snowpuppycoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</target>
+        <source xml:space="preserve">These are your SnowPuppyCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <target xml:space="preserve">These are your SnowPuppyCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</target>
         <context-group purpose="location"><context context-type="linenumber">98</context></context-group>
       </trans-unit>
       <trans-unit id="_msg20" approved="yes">
-        <source xml:space="preserve">These are your Snowpuppycoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <target xml:space="preserve">These are your Snowpuppycoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</target>
+        <source xml:space="preserve">These are your SnowPuppyCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <target xml:space="preserve">These are your SnowPuppyCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</target>
         <context-group purpose="location"><context context-type="linenumber">104</context></context-group>
       </trans-unit>
       <trans-unit id="_msg21" approved="yes">
@@ -145,7 +145,7 @@
         <source xml:space="preserve">Exporting Failed</source>
         <target xml:space="preserve">Exporting Failed</target>
         <context-group purpose="location"><context context-type="linenumber">309</context></context-group>
-        <note annotates="source" from="developer">%1 is a name of the file (e.g.: &quot;addressbook.csv&quot;) that the Snowpuppycoin addresses were exported to.</note>
+        <note annotates="source" from="developer">%1 is a name of the file (e.g.: &quot;addressbook.csv&quot;) that the SnowPuppyCoin addresses were exported to.</note>
       </trans-unit>
       <trans-unit id="_msg29">
         <source xml:space="preserve">There was an error trying to save the address list to %1. Please try again.</source>
@@ -787,8 +787,8 @@
   <file original="../snowpuppycoin.cpp" datatype="cpp" source-language="en" target-language="en"><body>
     <group restype="x-trolltech-linguist-context" resname="BitcoinGUI">
       <trans-unit id="_msg144" approved="yes">
-        <source xml:space="preserve">A fatal error occurred. Snowpuppycoin Core can no longer continue safely and will quit.</source>
-        <target xml:space="preserve">A fatal error occurred. Snowpuppycoin Core can no longer continue safely and will quit.</target>
+        <source xml:space="preserve">A fatal error occurred. SnowPuppyCoin Core can no longer continue safely and will quit.</source>
+        <target xml:space="preserve">A fatal error occurred. SnowPuppyCoin Core can no longer continue safely and will quit.</target>
         <context-group purpose="location"><context context-type="linenumber">376</context></context-group>
       </trans-unit>
     </group>
@@ -918,8 +918,8 @@
         <context-group purpose="location"><context context-type="linenumber">400</context></context-group>
       </trans-unit>
       <trans-unit id="_msg169" approved="yes">
-        <source xml:space="preserve">Send coins to a Snowpuppycoin address</source>
-        <target xml:space="preserve">Send coins to a Snowpuppycoin address</target>
+        <source xml:space="preserve">Send coins to a SnowPuppyCoin address</source>
+        <target xml:space="preserve">Send coins to a SnowPuppyCoin address</target>
         <context-group purpose="location"><context context-type="linenumber">401</context></context-group>
       </trans-unit>
       <trans-unit id="_msg170" approved="yes">
@@ -1053,8 +1053,8 @@
         <context-group purpose="location"><context context-type="linenumber">442</context></context-group>
       </trans-unit>
       <trans-unit id="_msg196" approved="yes">
-        <source xml:space="preserve">Send %1 funds to a Snowpuppycoin address</source>
-        <target xml:space="preserve">Send %1 funds to a Snowpuppycoin address</target>
+        <source xml:space="preserve">Send %1 funds to a SnowPuppyCoin address</source>
+        <target xml:space="preserve">Send %1 funds to a SnowPuppyCoin address</target>
         <context-group purpose="location"><context context-type="linenumber">406</context></context-group>
       </trans-unit>
       <trans-unit id="_msg197">
@@ -1063,7 +1063,7 @@
         <context-group purpose="location"><context context-type="linenumber">413</context></context-group>
       </trans-unit>
       <trans-unit id="_msg198">
-        <source xml:space="preserve">Send assets to a Snowpuppycoin address</source>
+        <source xml:space="preserve">Send assets to a SnowPuppyCoin address</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">414</context></context-group>
       </trans-unit>
@@ -1158,8 +1158,8 @@
         <context-group purpose="location"><context context-type="linenumber">466</context></context-group>
       </trans-unit>
       <trans-unit id="_msg217" approved="yes">
-        <source xml:space="preserve">Sign messages with your Snowpuppycoin addresses to prove you own them</source>
-        <target xml:space="preserve">Sign messages with your Snowpuppycoin addresses to prove you own them</target>
+        <source xml:space="preserve">Sign messages with your SnowPuppyCoin addresses to prove you own them</source>
+        <target xml:space="preserve">Sign messages with your SnowPuppyCoin addresses to prove you own them</target>
         <context-group purpose="location"><context context-type="linenumber">467</context></context-group>
       </trans-unit>
       <trans-unit id="_msg218" approved="yes">
@@ -1168,8 +1168,8 @@
         <context-group purpose="location"><context context-type="linenumber">468</context></context-group>
       </trans-unit>
       <trans-unit id="_msg219" approved="yes">
-        <source xml:space="preserve">Verify messages to ensure they were signed with specified Snowpuppycoin addresses</source>
-        <target xml:space="preserve">Verify messages to ensure they were signed with specified Snowpuppycoin addresses</target>
+        <source xml:space="preserve">Verify messages to ensure they were signed with specified SnowPuppyCoin addresses</source>
+        <target xml:space="preserve">Verify messages to ensure they were signed with specified SnowPuppyCoin addresses</target>
         <context-group purpose="location"><context context-type="linenumber">470</context></context-group>
       </trans-unit>
       <trans-unit id="_msg220" approved="yes">
@@ -1268,8 +1268,8 @@
         <context-group purpose="location"><context context-type="linenumber">517</context></context-group>
       </trans-unit>
       <trans-unit id="_msg239" approved="yes">
-        <source xml:space="preserve">Show the %1 help message to get a list with possible Snowpuppycoin command-line options</source>
-        <target xml:space="preserve">Show the %1 help message to get a list with possible Snowpuppycoin command-line options</target>
+        <source xml:space="preserve">Show the %1 help message to get a list with possible SnowPuppyCoin command-line options</source>
+        <target xml:space="preserve">Show the %1 help message to get a list with possible SnowPuppyCoin command-line options</target>
         <context-group purpose="location"><context context-type="linenumber">520</context></context-group>
       </trans-unit>
       <trans-unit id="_msg240" approved="yes">
@@ -1327,12 +1327,12 @@
       <group restype="x-gettext-plurals">
         <context-group purpose="location"><context context-type="linenumber">1328</context></context-group>
         <trans-unit id="_msg250[0]" approved="yes">
-          <source xml:space="preserve">%n active connection(s) to Snowpuppycoin network</source>
-          <target xml:space="preserve">%n active connection to Snowpuppycoin network</target>
+          <source xml:space="preserve">%n active connection(s) to SnowPuppyCoin network</source>
+          <target xml:space="preserve">%n active connection to SnowPuppyCoin network</target>
         </trans-unit>
         <trans-unit id="_msg250[1]" approved="yes">
-          <source xml:space="preserve">%n active connection(s) to Snowpuppycoin network</source>
-          <target xml:space="preserve">%n active connections to Snowpuppycoin network</target>
+          <source xml:space="preserve">%n active connection(s) to SnowPuppyCoin network</source>
+          <target xml:space="preserve">%n active connections to SnowPuppyCoin network</target>
         </trans-unit>
       </group>
       <trans-unit id="_msg251" approved="yes">
@@ -1947,8 +1947,8 @@
         </trans-unit>
       </group>
       <trans-unit id="_msg364">
-        <source xml:space="preserve">Warning: Invalid Snowpuppycoin address</source>
-        <target xml:space="preserve" state="needs-review-translation">Warning: Invalid Snowpuppycoin address</target>
+        <source xml:space="preserve">Warning: Invalid SnowPuppyCoin address</source>
+        <target xml:space="preserve" state="needs-review-translation">Warning: Invalid SnowPuppyCoin address</target>
         <context-group purpose="location"><context context-type="linenumber">721</context></context-group>
       </trans-unit>
       <trans-unit id="_msg365">
@@ -2260,7 +2260,7 @@
         <context-group purpose="location"><context context-type="linenumber">1185</context></context-group>
       </trans-unit>
       <trans-unit id="_msg425">
-        <source xml:space="preserve">Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Snowpuppycoin transactions than the network can process.</source>
+        <source xml:space="preserve">Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for SnowPuppyCoin transactions than the network can process.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">1212</context></context-group>
         <context-group purpose="location"><context context-type="linenumber">1225</context></context-group>
@@ -2471,8 +2471,8 @@
         <context-group purpose="location"><context context-type="linenumber">37</context></context-group>
       </trans-unit>
       <trans-unit id="_msg462" approved="yes">
-        <source xml:space="preserve">The entered address &quot;%1&quot; is not a valid Snowpuppycoin address.</source>
-        <target xml:space="preserve">The entered address &quot;%1&quot; is not a valid Snowpuppycoin address.</target>
+        <source xml:space="preserve">The entered address &quot;%1&quot; is not a valid SnowPuppyCoin address.</source>
+        <target xml:space="preserve">The entered address &quot;%1&quot; is not a valid SnowPuppyCoin address.</target>
         <context-group purpose="location"><context context-type="linenumber">102</context></context-group>
       </trans-unit>
       <trans-unit id="_msg463" approved="yes">
@@ -2532,8 +2532,8 @@
         <context-group purpose="location"><context context-type="linenumber">140</context></context-group>
       </trans-unit>
       <trans-unit id="_msg473" approved="yes">
-        <source xml:space="preserve">%1 will download and store a copy of the Snowpuppycoin block chain.</source>
-        <target xml:space="preserve">%1 will download and store a copy of the Snowpuppycoin block chain.</target>
+        <source xml:space="preserve">%1 will download and store a copy of the SnowPuppyCoin block chain.</source>
+        <target xml:space="preserve">%1 will download and store a copy of the SnowPuppyCoin block chain.</target>
         <context-group purpose="location"><context context-type="linenumber">148</context></context-group>
       </trans-unit>
       <trans-unit id="_msg474" approved="yes">
@@ -2586,8 +2586,8 @@
         <context-group purpose="location"><context context-type="linenumber">110</context></context-group>
       </trans-unit>
       <trans-unit id="_msg483" approved="yes">
-        <source xml:space="preserve">&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 gives you true financial privacy by obscuring the origins of your funds. All the Snowpuppycoin in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The %1 process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;%1 begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 SPUPC, 0.01 SPUPC, 0.1 SPUPC, 1 SPUPC and 10 SPUPC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;smartnodes.&quot; These smartnodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the smartnodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The smartnode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of %1 makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have %1 disabled. &lt;hr&gt;For more information, see the &lt;a style=&quot;%2&quot; href=&quot;%3&quot;&gt;%1 documentation&lt;/a&gt;.</source>
-        <target xml:space="preserve">&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 gives you true financial privacy by obscuring the origins of your funds. All the Snowpuppycoin in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The %1 process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;%1 begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 SPUPC, 0.01 SPUPC, 0.1 SPUPC, 1 SPUPC and 10 SPUPC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;smartnodes.&quot; These smartnodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the smartnodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The smartnode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of %1 makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have %1 disabled. &lt;hr&gt;For more information, see the &lt;a style=&quot;%2&quot; href=&quot;%3&quot;&gt;%1 documentation&lt;/a&gt;.</target>
+        <source xml:space="preserve">&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 gives you true financial privacy by obscuring the origins of your funds. All the SnowPuppyCoin in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The %1 process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;%1 begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 SPUPC, 0.01 SPUPC, 0.1 SPUPC, 1 SPUPC and 10 SPUPC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;smartnodes.&quot; These smartnodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the smartnodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The smartnode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of %1 makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have %1 disabled. &lt;hr&gt;For more information, see the &lt;a style=&quot;%2&quot; href=&quot;%3&quot;&gt;%1 documentation&lt;/a&gt;.</source>
+        <target xml:space="preserve">&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 gives you true financial privacy by obscuring the origins of your funds. All the SnowPuppyCoin in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The %1 process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;%1 begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 SPUPC, 0.01 SPUPC, 0.1 SPUPC, 1 SPUPC and 10 SPUPC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;smartnodes.&quot; These smartnodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the smartnodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The smartnode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of %1 makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have %1 disabled. &lt;hr&gt;For more information, see the &lt;a style=&quot;%2&quot; href=&quot;%3&quot;&gt;%1 documentation&lt;/a&gt;.</target>
         <context-group purpose="location"><context context-type="linenumber">114</context></context-group>
       </trans-unit>
     </group>
@@ -2656,13 +2656,13 @@
         <context-group purpose="location"><context context-type="linenumber">14</context></context-group>
       </trans-unit>
       <trans-unit id="_msg495" approved="yes">
-        <source xml:space="preserve">Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Snowpuppycoin network, as detailed below.</source>
-        <target xml:space="preserve">Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Snowpuppycoin network, as detailed below.</target>
+        <source xml:space="preserve">Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the SnowPuppyCoin network, as detailed below.</source>
+        <target xml:space="preserve">Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the SnowPuppyCoin network, as detailed below.</target>
         <context-group purpose="location"><context context-type="linenumber">114</context></context-group>
       </trans-unit>
       <trans-unit id="_msg496" approved="yes">
-        <source xml:space="preserve">Attempting to spend Snowpuppycoin that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <target xml:space="preserve">Attempting to spend Snowpuppycoin that are affected by not-yet-displayed transactions will not be accepted by the network.</target>
+        <source xml:space="preserve">Attempting to spend SnowPuppyCoin that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <target xml:space="preserve">Attempting to spend SnowPuppyCoin that are affected by not-yet-displayed transactions will not be accepted by the network.</target>
         <context-group purpose="location"><context context-type="linenumber">127</context></context-group>
       </trans-unit>
       <trans-unit id="_msg497" approved="yes">
@@ -2713,7 +2713,7 @@
   <file original="../modaloverlay.cpp" datatype="cpp" source-language="en" target-language="en"><body>
     <group restype="x-trolltech-linguist-context" resname="ModalOverlay">
       <trans-unit id="_msg505">
-        <source xml:space="preserve">Snowpuppycoin Core is currently syncing. It will download headers at first and then blocks from peers and validate them until reaching latest block mined at chain.</source>
+        <source xml:space="preserve">SnowPuppyCoin Core is currently syncing. It will download headers at first and then blocks from peers and validate them until reaching latest block mined at chain.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">49</context></context-group>
       </trans-unit>
@@ -2873,12 +2873,12 @@
         <context-group purpose="location"><context context-type="linenumber">407</context></context-group>
       </trans-unit>
       <trans-unit id="_msg535" approved="yes">
-        <source xml:space="preserve">Automatically open the Snowpuppycoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <target xml:space="preserve">Automatically open the Snowpuppycoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</target>
+        <source xml:space="preserve">Automatically open the SnowPuppyCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <target xml:space="preserve">Automatically open the SnowPuppyCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</target>
         <context-group purpose="location"><context context-type="linenumber">449</context></context-group>
       </trans-unit>
       <trans-unit id="_msg536">
-        <source xml:space="preserve">Automatically open the Snowpuppycoin Core client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <source xml:space="preserve">Automatically open the SnowPuppyCoin Core client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">459</context></context-group>
       </trans-unit>
@@ -2898,8 +2898,8 @@
         <context-group purpose="location"><context context-type="linenumber">472</context></context-group>
       </trans-unit>
       <trans-unit id="_msg540" approved="yes">
-        <source xml:space="preserve">Connect to the Snowpuppycoin network through a SOCKS5 proxy.</source>
-        <target xml:space="preserve">Connect to the Snowpuppycoin network through a SOCKS5 proxy.</target>
+        <source xml:space="preserve">Connect to the SnowPuppyCoin network through a SOCKS5 proxy.</source>
+        <target xml:space="preserve">Connect to the SnowPuppyCoin network through a SOCKS5 proxy.</target>
         <context-group purpose="location"><context context-type="linenumber">479</context></context-group>
       </trans-unit>
       <trans-unit id="_msg541" approved="yes">
@@ -3041,8 +3041,8 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">614</context></context-group>
       </trans-unit>
       <trans-unit id="_msg567" approved="yes">
-        <source xml:space="preserve">Connect to the Snowpuppycoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <target xml:space="preserve">Connect to the Snowpuppycoin network through a separate SOCKS5 proxy for Tor hidden services.</target>
+        <source xml:space="preserve">Connect to the SnowPuppyCoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <target xml:space="preserve">Connect to the SnowPuppyCoin network through a separate SOCKS5 proxy for Tor hidden services.</target>
         <context-group purpose="location"><context context-type="linenumber">636</context></context-group>
       </trans-unit>
       <trans-unit id="_msg568" approved="yes">
@@ -3160,8 +3160,8 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">20</context></context-group>
       </trans-unit>
       <trans-unit id="_msg589" approved="yes">
-        <source xml:space="preserve">The displayed information may be out of date. Your wallet automatically synchronizes with the Snowpuppycoin network after a connection is established, but this process has not completed yet.</source>
-        <target xml:space="preserve">The displayed information may be out of date. Your wallet automatically synchronizes with the Snowpuppycoin network after a connection is established, but this process has not completed yet.</target>
+        <source xml:space="preserve">The displayed information may be out of date. Your wallet automatically synchronizes with the SnowPuppyCoin network after a connection is established, but this process has not completed yet.</source>
+        <target xml:space="preserve">The displayed information may be out of date. Your wallet automatically synchronizes with the SnowPuppyCoin network after a connection is established, but this process has not completed yet.</target>
         <context-group purpose="location"><context context-type="linenumber">80</context></context-group>
         <context-group purpose="location"><context context-type="linenumber">378</context></context-group>
         <context-group purpose="location"><context context-type="linenumber">615</context></context-group>
@@ -3498,8 +3498,8 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">224</context></context-group>
       </trans-unit>
       <trans-unit id="_msg649" approved="yes">
-        <source xml:space="preserve">URI cannot be parsed! This can be caused by an invalid Snowpuppycoin address or malformed URI parameters.</source>
-        <target xml:space="preserve">URI cannot be parsed! This can be caused by an invalid Snowpuppycoin address or malformed URI parameters.</target>
+        <source xml:space="preserve">URI cannot be parsed! This can be caused by an invalid SnowPuppyCoin address or malformed URI parameters.</source>
+        <target xml:space="preserve">URI cannot be parsed! This can be caused by an invalid SnowPuppyCoin address or malformed URI parameters.</target>
         <context-group purpose="location"><context context-type="linenumber">231</context></context-group>
       </trans-unit>
       <trans-unit id="_msg650" approved="yes">
@@ -3555,8 +3555,8 @@ https://explore.transifex.com/feathered-inc/</source>
   <file original="../guiutil.cpp" datatype="cpp" source-language="en" target-language="en"><body>
     <group restype="x-trolltech-linguist-context" resname="QObject">
       <trans-unit id="_msg658" approved="yes">
-        <source xml:space="preserve">Enter a Snowpuppycoin address (e.g. %1)</source>
-        <target xml:space="preserve">Enter a Snowpuppycoin address (e.g. %1)</target>
+        <source xml:space="preserve">Enter a SnowPuppyCoin address (e.g. %1)</source>
+        <target xml:space="preserve">Enter a SnowPuppyCoin address (e.g. %1)</target>
         <context-group purpose="location"><context context-type="linenumber">247</context></context-group>
       </trans-unit>
       <trans-unit id="_msg659" approved="yes">
@@ -4380,8 +4380,8 @@ https://explore.transifex.com/feathered-inc/</source>
   <file original="../forms/receivecoinsdialog.ui" datatype="x-trolltech-designer-ui" source-language="en" target-language="en"><body>
     <group restype="x-trolltech-linguist-context" resname="ReceiveCoinsDialog">
       <trans-unit id="_msg801" approved="yes">
-        <source xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Snowpuppycoin network.</source>
-        <target xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Snowpuppycoin network.</target>
+        <source xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the SnowPuppyCoin network.</source>
+        <target xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the SnowPuppyCoin network.</target>
         <context-group purpose="location"><context context-type="linenumber">34</context></context-group>
       </trans-unit>
       <trans-unit id="_msg802" approved="yes">
@@ -4396,8 +4396,8 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">77</context></context-group>
       </trans-unit>
       <trans-unit id="_msg804" approved="yes">
-        <source xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Snowpuppycoin network.</source>
-        <target xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Snowpuppycoin network.</target>
+        <source xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the SnowPuppyCoin network.</source>
+        <target xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the SnowPuppyCoin network.</target>
         <context-group purpose="location"><context context-type="linenumber">60</context></context-group>
       </trans-unit>
       <trans-unit id="_msg805" approved="yes">
@@ -4755,8 +4755,8 @@ https://explore.transifex.com/feathered-inc/</source>
         </trans-unit>
       </group>
       <trans-unit id="_msg870">
-        <source xml:space="preserve">Warning: Invalid Snowpuppycoin address</source>
-        <target xml:space="preserve" state="needs-review-translation">Warning: Invalid Snowpuppycoin address</target>
+        <source xml:space="preserve">Warning: Invalid SnowPuppyCoin address</source>
+        <target xml:space="preserve" state="needs-review-translation">Warning: Invalid SnowPuppyCoin address</target>
         <context-group purpose="location"><context context-type="linenumber">841</context></context-group>
       </trans-unit>
       <trans-unit id="_msg871">
@@ -4992,8 +4992,8 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">72</context></context-group>
       </trans-unit>
       <trans-unit id="_msg915">
-        <source xml:space="preserve">The Snowpuppycoin address to send the payment to</source>
-        <target xml:space="preserve" state="needs-review-translation">The Snowpuppycoin address to send the payment to</target>
+        <source xml:space="preserve">The SnowPuppyCoin address to send the payment to</source>
+        <target xml:space="preserve" state="needs-review-translation">The SnowPuppyCoin address to send the payment to</target>
         <context-group purpose="location"><context context-type="linenumber">90</context></context-group>
       </trans-unit>
       <trans-unit id="_msg916">
@@ -5477,8 +5477,8 @@ https://explore.transifex.com/feathered-inc/</source>
         </trans-unit>
       </group>
       <trans-unit id="_msg1006" approved="yes">
-        <source xml:space="preserve">Warning: Invalid Snowpuppycoin address</source>
-        <target xml:space="preserve">Warning: Invalid Snowpuppycoin address</target>
+        <source xml:space="preserve">Warning: Invalid SnowPuppyCoin address</source>
+        <target xml:space="preserve">Warning: Invalid SnowPuppyCoin address</target>
         <context-group purpose="location"><context context-type="linenumber">855</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1007" approved="yes">
@@ -5524,8 +5524,8 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">144</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1014" approved="yes">
-        <source xml:space="preserve">The Snowpuppycoin address to send the payment to</source>
-        <target xml:space="preserve">The Snowpuppycoin address to send the payment to</target>
+        <source xml:space="preserve">The SnowPuppyCoin address to send the payment to</source>
+        <target xml:space="preserve">The SnowPuppyCoin address to send the payment to</target>
         <context-group purpose="location"><context context-type="linenumber">81</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1015" approved="yes">
@@ -5583,8 +5583,8 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">440</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1025" approved="yes">
-        <source xml:space="preserve">The fee will be deducted from the amount being sent. The recipient will receive a lower amount of Snowpuppycoin than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <target xml:space="preserve">The fee will be deducted from the amount being sent. The recipient will receive a lower amount of Snowpuppycoin than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</target>
+        <source xml:space="preserve">The fee will be deducted from the amount being sent. The recipient will receive a lower amount of SnowPuppyCoin than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <target xml:space="preserve">The fee will be deducted from the amount being sent. The recipient will receive a lower amount of SnowPuppyCoin than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</target>
         <context-group purpose="location"><context context-type="linenumber">169</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1026" approved="yes">
@@ -5603,8 +5603,8 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">49</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1029" approved="yes">
-        <source xml:space="preserve">A message that was attached to the snowpuppycoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Snowpuppycoin network.</source>
-        <target xml:space="preserve">A message that was attached to the snowpuppycoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Snowpuppycoin network.</target>
+        <source xml:space="preserve">A message that was attached to the snowpuppycoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the SnowPuppyCoin network.</source>
+        <target xml:space="preserve">A message that was attached to the snowpuppycoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the SnowPuppyCoin network.</target>
         <context-group purpose="location"><context context-type="linenumber">66</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1030" approved="yes">
@@ -5678,13 +5678,13 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">31</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1042" approved="yes">
-        <source xml:space="preserve">You can sign messages/agreements with your addresses to prove you can receive Snowpuppycoin sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <target xml:space="preserve">You can sign messages/agreements with your addresses to prove you can receive Snowpuppycoin sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</target>
+        <source xml:space="preserve">You can sign messages/agreements with your addresses to prove you can receive SnowPuppyCoin sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <target xml:space="preserve">You can sign messages/agreements with your addresses to prove you can receive SnowPuppyCoin sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</target>
         <context-group purpose="location"><context context-type="linenumber">66</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1043" approved="yes">
-        <source xml:space="preserve">The Snowpuppycoin address to sign the message with</source>
-        <target xml:space="preserve">The Snowpuppycoin address to sign the message with</target>
+        <source xml:space="preserve">The SnowPuppyCoin address to sign the message with</source>
+        <target xml:space="preserve">The SnowPuppyCoin address to sign the message with</target>
         <context-group purpose="location"><context context-type="linenumber">84</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1044" approved="yes">
@@ -5725,8 +5725,8 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">148</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1051" approved="yes">
-        <source xml:space="preserve">Sign the message to prove you own this Snowpuppycoin address</source>
-        <target xml:space="preserve">Sign the message to prove you own this Snowpuppycoin address</target>
+        <source xml:space="preserve">Sign the message to prove you own this SnowPuppyCoin address</source>
+        <target xml:space="preserve">Sign the message to prove you own this SnowPuppyCoin address</target>
         <context-group purpose="location"><context context-type="linenumber">162</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1052" approved="yes">
@@ -5756,13 +5756,13 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">230</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1057" approved="yes">
-        <source xml:space="preserve">The Snowpuppycoin address the message was signed with</source>
-        <target xml:space="preserve">The Snowpuppycoin address the message was signed with</target>
+        <source xml:space="preserve">The SnowPuppyCoin address the message was signed with</source>
+        <target xml:space="preserve">The SnowPuppyCoin address the message was signed with</target>
         <context-group purpose="location"><context context-type="linenumber">251</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1058" approved="yes">
-        <source xml:space="preserve">Verify the message to ensure it was signed with the specified Snowpuppycoin address</source>
-        <target xml:space="preserve">Verify the message to ensure it was signed with the specified Snowpuppycoin address</target>
+        <source xml:space="preserve">Verify the message to ensure it was signed with the specified SnowPuppyCoin address</source>
+        <target xml:space="preserve">Verify the message to ensure it was signed with the specified SnowPuppyCoin address</target>
         <context-group purpose="location"><context context-type="linenumber">281</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1059" approved="yes">
@@ -7120,7 +7120,7 @@ https://explore.transifex.com/feathered-inc/</source>
         <context-group purpose="location"><context context-type="linenumber">652</context></context-group>
       </trans-unit>
       <trans-unit id="_msg1308">
-        <source xml:space="preserve">Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Snowpuppycoin transactions than the network can process.</source>
+        <source xml:space="preserve">Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for SnowPuppyCoin transactions than the network can process.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">679</context></context-group>
         <context-group purpose="location"><context context-type="linenumber">692</context></context-group>

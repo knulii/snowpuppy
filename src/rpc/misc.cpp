@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -176,7 +176,7 @@ static UniValue validateaddress(const JSONRPCRequest &request) {
     RPCHelpMan{"validateaddress",
                "\nReturn information about the given snowpuppycoin address.\n",
                {
-                       {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The Snowpuppycoin address to validate"},
+                       {"address", RPCArg::Type::STR, RPCArg::Optional::NO, "The SnowPuppyCoin address to validate"},
                },
                RPCResult{
                        RPCResult::Type::OBJ, "", "",
@@ -396,7 +396,7 @@ static UniValue verifymessage(const JSONRPCRequest &request) {
                "\nVerify a signed message\n",
                {
                        {"address", RPCArg::Type::STR, RPCArg::Optional::NO,
-                        "The Snowpuppycoin address to use for the signature."},
+                        "The SnowPuppyCoin address to use for the signature."},
                        {"signature", RPCArg::Type::STR, RPCArg::Optional::NO,
                         "The signature provided by the signer in base 64 encoding (see signmessage)."},
                        {"message", RPCArg::Type::STR, RPCArg::Optional::NO, "The message that was signed."},
@@ -1447,7 +1447,7 @@ UniValue logging(const JSONRPCRequest &request) {
                "The valid logging categories are: " + LogInstance().LogCategoriesString() + "\n"
                                                                                             "In addition, the following are available as category names with special meanings:\n"
                                                                                             "  - \"all\",  \"1\" : represent all logging categories.\n"
-                                                                                            "  - \"snowpuppycoin\" activates all Snowpuppycoin-specific categories at once.\n"
+                                                                                            "  - \"snowpuppycoin\" activates all SnowPuppyCoin-specific categories at once.\n"
                                                                                             "To deactivate all categories at once you can specify \"all\" in <exclude>.\n"
                                                                                             "  - \"none\", \"0\" : even if other logging categories are specified, ignore all of them.\n",
                {
@@ -1546,7 +1546,7 @@ static const CRPCCommand commands[] =
                 {"addressindex", "getaddresstxids",        &getaddresstxids,        {"addresses"}},
                 {"addressindex", "getaddressbalance",      &getaddressbalance,      {"addresses"}},
 
-                /* Snowpuppycoin features */
+                /* SnowPuppyCoin features */
                 {"snowpuppycoin",    "mnsync",                 &mnsync,                 {}},
                 {"snowpuppycoin",    "spork",                  &spork,                  {"arg0",       "value"}},
 

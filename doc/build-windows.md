@@ -1,12 +1,12 @@
 WINDOWS BUILD NOTES
 ====================
 
-Below are some notes on how to build Snowpuppycoin Core for Windows.
+Below are some notes on how to build SnowPuppyCoin Core for Windows.
 
-The options known to work for building Snowpuppycoin Core on Windows are:
+The options known to work for building SnowPuppyCoin Core on Windows are:
 
 * On Linux, using the [Mingw-w64](https://www.mingw-w64.org/) cross compiler tool chain. 
-and is the platform used to build the Snowpuppycoin Core Windows release binaries.
+and is the platform used to build the SnowPuppyCoin Core Windows release binaries.
 * On Windows, using [Windows
 Subsystem for Linux (WSL)](https://docs.microsoft.com/windows/wsl/about) and the Mingw-w64 cross compiler tool chain.
 
@@ -63,7 +63,7 @@ sudo apt install g++-mingw-w64-x86-64
 
 Once the toolchain is installed the build steps are common:
 
-Note that for WSL the Snowpuppycoin Core source path MUST be somewhere in the default mount file system, for
+Note that for WSL the SnowPuppyCoin Core source path MUST be somewhere in the default mount file system, for
 example /usr/src/snowpuppycoin, AND not under /mnt/d/. If this is not the case the dependency autoconf scripts will fail.
 This means you cannot use a directory that is located directly on the host Windows file system to perform the build.
 

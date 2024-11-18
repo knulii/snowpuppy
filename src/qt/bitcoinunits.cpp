@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -72,19 +72,19 @@ QString BitcoinUnits::description(int unit) {
     if (Params().NetworkIDString() == CBaseChainParams::MAIN) {
         switch (unit) {
             case SPUPC:
-                return QString("Snowpuppycoin");
+                return QString("SnowPuppyCoin");
             case mSPUPC:
-                return QString("Milli-Snowpuppycoin (1 / 1"
+                return QString("Milli-SnowPuppyCoin (1 / 1"
                 THIN_SP_UTF8
                 "000)");
             case uSPUPC:
-                return QString("Micro-Snowpuppycoin (1 / 1"
+                return QString("Micro-SnowPuppyCoin (1 / 1"
                 THIN_SP_UTF8
                 "000"
                 THIN_SP_UTF8
                 "000)");
             case ruffs:
-                return QString("Ten Nano-Snowpuppycoin (1 / 100"
+                return QString("Ten Nano-SnowPuppyCoin (1 / 100"
                 THIN_SP_UTF8
                 "000"
                 THIN_SP_UTF8
@@ -95,19 +95,19 @@ QString BitcoinUnits::description(int unit) {
     } else {
         switch (unit) {
             case SPUPC:
-                return QString("TestSnowpuppycoins");
+                return QString("TestSnowPuppyCoins");
             case mSPUPC:
-                return QString("Milli-TestSnowpuppycoin (1 / 1"
+                return QString("Milli-TestSnowPuppyCoin (1 / 1"
                 THIN_SP_UTF8
                 "000)");
             case uSPUPC:
-                return QString("Micro-TestSnowpuppycoin (1 / 1"
+                return QString("Micro-TestSnowPuppyCoin (1 / 1"
                 THIN_SP_UTF8
                 "000"
                 THIN_SP_UTF8
                 "000)");
             case ruffs:
-                return QString("Ten Nano-TestSnowpuppycoin (1 / 100"
+                return QString("Ten Nano-TestSnowPuppyCoin (1 / 100"
                 THIN_SP_UTF8
                 "000"
                 THIN_SP_UTF8

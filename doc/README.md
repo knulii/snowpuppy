@@ -1,11 +1,11 @@
-Snowpuppycoin Core
+SnowPuppyCoin Core
 ==========
 
-This is the official reference wallet for Snowpuppycoin digital currency and comprises the backbone of the Snowpuppycoin peer-to-peer network. You can [download Snowpuppycoin Core](https://www.snowpuppycoin.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for SnowPuppyCoin digital currency and comprises the backbone of the SnowPuppyCoin peer-to-peer network. You can [download SnowPuppyCoin Core](https://www.snowpuppycoin.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Snowpuppycoin on your native platform.
+The following are some helpful notes on how to run SnowPuppyCoin on your native platform.
 
 ### Unix
 
@@ -20,20 +20,20 @@ Unpack the files into a directory, and then run snowpuppycoin-qt.exe.
 
 ### OS X
 
-Drag Snowpuppycoin-Qt to your applications folder, and then run Snowpuppycoin-Qt.
+Drag SnowPuppyCoin-Qt to your applications folder, and then run SnowPuppyCoin-Qt.
 
 ### Need Help?
 
-* See the [Snowpuppycoin documentation](https://docs.snowpuppycoin.org)
+* See the [SnowPuppyCoin documentation](https://docs.snowpuppycoin.org)
 for help and more information.
-* See the [Snowpuppycoin Developer Documentation](https://snowpuppycoin-docs.github.io/) 
+* See the [SnowPuppyCoin Developer Documentation](https://snowpuppycoin-docs.github.io/) 
 for technical specifications and implementation details.
-* Ask for help on [Snowpuppycoin Nation Discord](http://snowpuppycoinchat.org)
-* Ask for help on the [Snowpuppycoin Forum](https://snowpuppycoin.org/forum)
+* Ask for help on [SnowPuppyCoin Nation Discord](http://snowpuppycoinchat.org)
+* Ask for help on the [SnowPuppyCoin Forum](https://snowpuppycoin.org/forum)
 
 Building
 ---------------------
-The following are developer notes on how to build Snowpuppycoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build SnowPuppyCoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -44,7 +44,7 @@ The following are developer notes on how to build Snowpuppycoin Core on your nat
 
 Development
 ---------------------
-The Snowpuppycoin Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The SnowPuppyCoin Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
@@ -60,8 +60,8 @@ The Snowpuppycoin Core repo's [root README](/README.md) contains relevant inform
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [Snowpuppycoin Forum](https://snowpuppycoin.org/forum), in the Development & Technical Discussion board.
-* Discuss on [Snowpuppycoin Nation Discord](http://snowpuppycoinchat.org)
+* Discuss on the [SnowPuppyCoin Forum](https://snowpuppycoin.org/forum), in the Development & Technical Discussion board.
+* Discuss on [SnowPuppyCoin Nation Discord](http://snowpuppycoinchat.org)
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

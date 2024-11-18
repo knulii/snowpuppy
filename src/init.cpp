@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -853,7 +853,7 @@ void SetupServerArgs() {
     gArgs.AddArg("-printtoconsole",
                  "Send trace/debug info to console (default: 1 when no -daemon. To disable logging to file, set -nodebuglogfile)",
                  ArgsManager::ALLOW_ANY, OptionsCategory::DEBUG_TEST);
-    gArgs.AddArg("-pushversion", "Protocol version OVERRIDE to report to other Snowpuppycoin nodes", ArgsManager::ALLOW_ANY,
+    gArgs.AddArg("-pushversion", "Protocol version OVERRIDE to report to other SnowPuppyCoin nodes", ArgsManager::ALLOW_ANY,
                  OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-shrinkdebugfile", "Shrink debug.log file on client startup (default: 1 when no -debug)",
                  ArgsManager::ALLOW_ANY, OptionsCategory::DEBUG_TEST);
@@ -878,7 +878,7 @@ void SetupServerArgs() {
                  "Set the smartnode BLS private key and enable the client to act as a smartnode",
                  ArgsManager::ALLOW_ANY, OptionsCategory::SMARTNODE);
     gArgs.AddArg("-platform-user=<user>",
-                 "Set the username for the \"platform user\", a restricted user intended to be used by Snowpuppycoin Platform, to the specified username.",
+                 "Set the username for the \"platform user\", a restricted user intended to be used by SnowPuppyCoin Platform, to the specified username.",
                  ArgsManager::ALLOW_ANY, OptionsCategory::SMARTNODE);
 
     gArgs.AddArg("-acceptnonstdtxn",
@@ -1243,7 +1243,7 @@ void PeriodicStats() {
 }
 
 /** Sanity checks
- *  Ensure that Snowpuppycoin Core is running in a usable environment with all
+ *  Ensure that SnowPuppyCoin Core is running in a usable environment with all
  *  necessary library support.
  */
 static bool InitSanityCheck() {
@@ -1749,7 +1749,7 @@ bool AppInitParameterInteraction() {
 }
 
 static bool LockDataDirectory(bool probeOnly) {
-    // Make sure only a single Snowpuppycoin Core process is using the data directory.
+    // Make sure only a single SnowPuppyCoin Core process is using the data directory.
     fs::path datadir = GetDataDir();
     if (!DirIsWritable(datadir)) {
         return InitError(strprintf(_("Cannot write to data directory '%s'; check permissions."), datadir.string()));
@@ -1842,9 +1842,9 @@ bool AppInitMain(const util::Ref &context, NodeContext &node, interfaces::BlockA
     if (gArgs.IsArgSet("-datadir") && !fs::path(gArgs.GetArg("-datadir", "")).is_absolute()) {
         LogPrintf(
                 "Warning: relative datadir option '%s' specified, which will be interpreted relative to the " /* Continued */
-                "current working directory '%s'. This is fragile, because if Snowpuppycoin Core is started in the future "
+                "current working directory '%s'. This is fragile, because if SnowPuppyCoin Core is started in the future "
                 "from a different location, it will be unable to locate the current data files. There could "
-                "also be data loss if Snowpuppycoin Core is started while in a temporary directory.\n",
+                "also be data loss if SnowPuppyCoin Core is started while in a temporary directory.\n",
                 gArgs.GetArg("-datadir", ""), fs::current_path().string());
     }
 
@@ -2572,7 +2572,7 @@ bool AppInitMain(const util::Ref &context, NodeContext &node, interfaces::BlockA
         }
     }
 
-    // ********************************************************* Step 10c: schedule Snowpuppycoin-specific tasks
+    // ********************************************************* Step 10c: schedule SnowPuppyCoin-specific tasks
 
     node.scheduler->scheduleEvery(std::bind(&CNetFulfilledRequestManager::DoMaintenance, std::ref(netfulfilledman)),
                                   60000); // value in milliseconds

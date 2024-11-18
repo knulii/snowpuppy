@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -281,7 +281,7 @@ static UniValue generatetoaddress(const JSONRPCRequest& request)
         RPCExamples{
             "\nGenerate 11 blocks to myaddress\n"
             + HelpExampleCli("generatetoaddress", "11 \"myaddress\"")
-            + "If you are running the Snowpuppycoin Core wallet, you can get a new address to send the newly generated coins to with:\n"
+            + "If you are running the SnowPuppyCoin Core wallet, you can get a new address to send the newly generated coins to with:\n"
             + HelpExampleCli("getnewaddress", "")},
     }.Check(request);
 
@@ -627,13 +627,13 @@ static UniValue getblocktemplate(const JSONRPCRequest &request) {
     " is not connected!");
 
     if (::ChainstateActive().IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Snowpuppycoin Core is downloading blocks...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "SnowPuppyCoin Core is downloading blocks...");
 
     // next bock is a superblock and we need governance info to correctly construct it
     if (AreSuperblocksEnabled()
         && !smartnodeSync.IsSynced()
         && CSuperblock::IsValidBlockHeight(::ChainActive().Height() + 1))
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Snowpuppycoin Core is syncing with network...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "SnowPuppyCoin Core is syncing with network...");
 
     static unsigned int nTransactionsUpdatedLast;
     const CTxMemPool &mempool = EnsureMemPool(request.context);
@@ -1226,7 +1226,7 @@ UniValue setgenerate(const JSONRPCRequest &request) {
     if (!node.connman)
         throw JSONRPCError(RPC_CLIENT_P2P_DISABLED, "Error: Peer-to-peer functionality missing or disabled");
 
-    int numCores = GenerateSnowpuppycoins(fGenerate, nGenProcLimit, Params(), node);
+    int numCores = GenerateSnowPuppyCoins(fGenerate, nGenProcLimit, Params(), node);
 
     nGenProcLimit = nGenProcLimit >= 0 ? nGenProcLimit : numCores;
     std::string msg = std::to_string(nGenProcLimit) + " of " + std::to_string(numCores);
