@@ -1,4 +1,4 @@
-name: SnowPuppyCoin Build
+name: Snowpuppycoin Build
 on:
   push:
     branches:
@@ -417,10 +417,10 @@ jobs:
         run: |
           make deploy
           mkdir -p macos-dmg
-          mv SnowPuppyCoin-Core.dmg macos-dmg/
+          mv Snowpuppycoin-Core.dmg macos-dmg/
           cd macos-dmg
-          echo "sha256: `shasum SnowPuppyCoin-Core.dmg`" >> checksums.txt
-          echo "openssl-sha256: `openssl sha256 SnowPuppyCoin-Core.dmg`" >> checksums.txt
+          echo "sha256: `shasum Snowpuppycoin-Core.dmg`" >> checksums.txt
+          echo "openssl-sha256: `openssl sha256 Snowpuppycoin-Core.dmg`" >> checksums.txt
           cd ..
 
       - name: Upload dmg file
@@ -855,4 +855,3 @@ jobs:
           detailed_summary: ${{ steps.Tests.conclusion == 'failure'}}
           include_passed: false
           report_paths: "unit_test_results.xml"
-
