@@ -230,7 +230,7 @@ public:
     CMainParams() {
         strNetworkID = CBaseChainParams::MAIN;
         consensus.nSubsidyHalvingInterval = 210240; // Note: actual number of blocks per calendar year with DGW v3 is ~200700 (for example 449750 - 249050)
-        consensus.nSmartnodePaymentsStartBlock = 420; //
+        consensus.nSmartnodePaymentsStartBlock = 4200; //
         consensus.nSmartnodePaymentsIncreaseBlock = 4210; // actual historical value
         consensus.nSmartnodePaymentsIncreasePeriod = 576 * 30; // 17280 - actual historical value
         consensus.nInstantSendConfirmationsRequired = 6;
@@ -325,7 +325,7 @@ public:
         nExtCoinType = strExtCoinType.empty() ? 200 : std::stoi(strExtCoinType);
 
         std::vector <FounderRewardStructure> rewardStructures = {{INT_MAX, 10}};// 10% founder/dev fee forever
-        consensus.nFounderPayment = FounderPayment(rewardStructures, 250);
+        consensus.nFounderPayment = FounderPayment(rewardStructures, 100);
         consensus.nCollaterals = SmartnodeCollaterals(
                  {{88720,  1500000 * COIN},
                  {132720,  3000000 * COIN},
@@ -334,8 +334,8 @@ public:
                  {264720,  6000000 * COIN},
                  {INT_MAX, 7000000 * COIN}
                 },
-                {{420,    0},
-                 {INT_MAX, 10}}
+                {{4200,    0},
+                 {INT_MAX, 45}}
         );
         //FutureRewardShare defaultShare(0.45, 0.45, 0.1);
         consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.45, 0.45, 0.1);
