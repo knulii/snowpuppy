@@ -230,8 +230,8 @@ public:
     CMainParams() {
         strNetworkID = CBaseChainParams::MAIN;
         consensus.nSubsidyHalvingInterval = 210240; // Note: actual number of blocks per calendar year with DGW v3 is ~200700 (for example 449750 - 249050)
-        consensus.nSmartnodePaymentsStartBlock = 4200; //
-        consensus.nSmartnodePaymentsIncreaseBlock = 4210; // actual historical value
+        consensus.nSmartnodePaymentsStartBlock = 5000; //
+        consensus.nSmartnodePaymentsIncreaseBlock = 6210; // actual historical value
         consensus.nSmartnodePaymentsIncreasePeriod = 576 * 30; // 17280 - actual historical value
         consensus.nInstantSendConfirmationsRequired = 6;
         consensus.nInstantSendKeepLock = 24;
@@ -262,7 +262,7 @@ public:
         consensus.DGWBlocksAvg = 60;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
-        consensus.smartnodePaymentFixedBlock = 4199;
+        consensus.smartnodePaymentFixedBlock = 4999;
         consensus.nFutureForkBlock = 11;
 
         updateManager.Add
@@ -334,7 +334,7 @@ public:
                  {264720,  6000000 * COIN},
                  {INT_MAX, 7000000 * COIN}
                 },
-                {{4200,    0},
+                {{4999,    0},
                  {INT_MAX, 45}}
         );
         //FutureRewardShare defaultShare(0.45, 0.45, 0.1);
@@ -513,7 +513,7 @@ public:
 
         consensus.nCollaterals = SmartnodeCollaterals(
                 {{INT_MAX, 60000 * COIN}},
-                {{INT_MAX, 10}});
+                {{INT_MAX, 45}});
 
         consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.45, 0.45, 0.1);
 
@@ -636,7 +636,7 @@ public:
 
         consensus.nCollaterals = SmartnodeCollaterals(
                 {{INT_MAX, 60000 * COIN}},
-                {{INT_MAX, 10}});
+                {{INT_MAX, 45}});
 
         vFixedSeeds.clear();
         vSeeds.clear();
