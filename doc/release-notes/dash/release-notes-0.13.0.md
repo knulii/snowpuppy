@@ -1,4 +1,4 @@
-Snowpuppycoin Core version 0.13.0.0
+SnowPuppyCoin Core version 0.13.0.0
 ==========================
 
 Release is now available from:
@@ -20,7 +20,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Snowpuppycoin-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/SnowPuppyCoin-Qt (on Mac) or
 snowpuppycoind/snowpuppycoin-qt (on Linux). If you upgrade after DIP0003 activation you will
 have to reindex (start with -reindex-chainstate or -reindex) to make sure
 your wallet has all the new data synced.
@@ -41,7 +41,7 @@ DIP0002 - Special Transactions
 ------------------------------
 Currently, new features and consensus mechanisms have to be implemented on top of the restrictions
 imposed by the simple nature of transactions. Since classical transactions can only carry inputs
-and outputs, they are most useful for financial transactions (i.e. transfers of quantities of Snowpuppycoin
+and outputs, they are most useful for financial transactions (i.e. transfers of quantities of SnowPuppyCoin
 between addresses on the distributed ledger). These inputs and outputs carry scripts and signatures
 which are used to authorize and validate the transaction.
 
@@ -51,7 +51,7 @@ scripts to add additional data and meaning to a transaction. For example, new op
 to be introduced to mark a transaction as something special and add a payload. In other cases,
 OP_RETURN has been misused to store data on-chain.
 
-The introduction of special transactions will require the whole Snowpuppycoin ecosystem to perform a one-time
+The introduction of special transactions will require the whole SnowPuppyCoin ecosystem to perform a one-time
 mandatory update of all the software and libraries involved. Software and libraries will have to be
 changed so that they can differentiate between classical transactions and special transactions.
 Deserialization of a classical transaction remains unchanged. Deserialization of a special transaction
@@ -67,7 +67,7 @@ This DIP provides on-chain consensus for smartnode lists that in turn allow for 
 derivation and service scoring of smartnode rewards.
 
 In the previous system, each node maintained its own individual smartnode list. Smartnodes gained
-entry to that smartnode list after the owner created a 1000 Snowpuppycoin UTXO and the smartnode broadcast
+entry to that smartnode list after the owner created a 1000 SnowPuppyCoin UTXO and the smartnode broadcast
 a "smartnode broadcast/announcement" P2P message. This in turn set the smartnode to a PRE_ENABLED
 state in the list maintained by each node. Smartnodes then regularly broadcasted ping messages to
 keep the smartnode in ENABLED state.
@@ -88,7 +88,7 @@ take an unnecessarily long amount of time and sometimes resulted in failure.
 In the new system, the smartnode list is derived entirely from information found on-chain. New
 smartnodes are added by new special transactions called Provider Registration Transactions
 (abbreviated as ProRegTx). They are only removed by spending the collateral. A ProRegTx is a special
-transaction which includes either a 1000-Snowpuppycoin collateral payment or a reference to it, along with
+transaction which includes either a 1000-SnowPuppyCoin collateral payment or a reference to it, along with
 other payload information (DIP0002).
 
 The new system is going to be activated via combination of a BIP9-like deployment (bit 3) and new spork
@@ -99,7 +99,7 @@ Upgrade instructions: https://docs.snowpuppycoin.org/DIP3-smartnode-upgrade
 
 DIP0004 - Simplified Verification of Deterministic Smartnode Lists
 -------------------------------------------------------------------
-A verifiable and correct smartnode list is foundational to many Snowpuppycoin features, including verification
+A verifiable and correct smartnode list is foundational to many SnowPuppyCoin features, including verification
 of an InstantSend transaction, mixing in PrivateSend and many features of Evolution. The deterministic
 smartnode lists introduced by DIP0003 enable full derivation and verification of a smartnode list via
 on-chain data. This, however, requires the full chain to be available to construct or verify this list.
@@ -591,7 +591,7 @@ See detailed [set of changes](https://github.com/raptor3um/snowpuppycoin/compare
 - [`8f9b004ca`](https://github.com/raptor3um/snowpuppycoin/commit/8f9b004ca) Support "fast" mode when calling sync_smartnodes (#2383)
 - [`fcea333ba`](https://github.com/raptor3um/snowpuppycoin/commit/fcea333ba) Rewrite handling of too long depends builds in .travis.yml (#2385)
 - [`d1debfc26`](https://github.com/raptor3um/snowpuppycoin/commit/d1debfc26) Implement mt_pooled_secure_allocator and use it for BLS secure allocation (#2375)
-- [`0692de1c5`](https://github.com/raptor3um/snowpuppycoin/commit/0692de1c5) Fix prepare_smartnodes/create_smartnodes in SnowpuppycoinTestFramework (#2382)
+- [`0692de1c5`](https://github.com/raptor3um/snowpuppycoin/commit/0692de1c5) Fix prepare_smartnodes/create_smartnodes in SnowPuppyCoinTestFramework (#2382)
 - [`6433a944a`](https://github.com/raptor3um/snowpuppycoin/commit/6433a944a) [Trivial] typo Groupped -> Grouped (#2374)
 - [`59932401b`](https://github.com/raptor3um/snowpuppycoin/commit/59932401b) Change internal references of Darksend to PrivateSend (#2372)
 - [`e3046adb3`](https://github.com/raptor3um/snowpuppycoin/commit/e3046adb3) Clear devNetParams and mimic behavior of other param types (#2367)
@@ -670,19 +670,19 @@ See detailed [set of changes](https://github.com/raptor3um/snowpuppycoin/compare
 - [`eb202e812`](https://github.com/raptor3um/snowpuppycoin/commit/eb202e812) Use ccache in gitian builds (#2185)
 - [`b47617325`](https://github.com/raptor3um/snowpuppycoin/commit/b47617325) Install python3 in gitian builds (#2182)
 - [`7a85e24c3`](https://github.com/raptor3um/snowpuppycoin/commit/7a85e24c3) Remove deprecated gitian-rpi2.yml descriptor (#2183)
-- [`1681d6366`](https://github.com/raptor3um/snowpuppycoin/commit/1681d6366) Replace Snowpuppycoin-specific threads with Snowpuppycoin-specific scheduled tasks (#2043)
+- [`1681d6366`](https://github.com/raptor3um/snowpuppycoin/commit/1681d6366) Replace SnowPuppyCoin-specific threads with SnowPuppyCoin-specific scheduled tasks (#2043)
 - [`dac090964`](https://github.com/raptor3um/snowpuppycoin/commit/dac090964) remove snowpuppycoin.io dns seed entry (#2181)
 - [`753c2436b`](https://github.com/raptor3um/snowpuppycoin/commit/753c2436b) Fix MissingPropertyException on Jenkins when no cache was found (#2180)
 - [`f3e380659`](https://github.com/raptor3um/snowpuppycoin/commit/f3e380659) Move to in-docker CI builds and add Jenkins support (#2178)
 - [`23dde9f12`](https://github.com/raptor3um/snowpuppycoin/commit/23dde9f12) Remove a few annoying debug prints from CSmartnodeMan (#2179)
 - [`5036d7dfc`](https://github.com/raptor3um/snowpuppycoin/commit/5036d7dfc) depends: Update Qt download url (#2177)
-- [`e23339d6f`](https://github.com/raptor3um/snowpuppycoin/commit/e23339d6f) use nullptr in Snowpuppycoin-specific code (#2166)
+- [`e23339d6f`](https://github.com/raptor3um/snowpuppycoin/commit/e23339d6f) use nullptr in SnowPuppyCoin-specific code (#2166)
 - [`42c193df0`](https://github.com/raptor3um/snowpuppycoin/commit/42c193df0) replace map count/insert w/emplace in instantx.cpp (#2165)
 - [`fd70a1eb9`](https://github.com/raptor3um/snowpuppycoin/commit/fd70a1eb9) iterator cleanup in several places (#2164)
 - [`df1be90ce`](https://github.com/raptor3um/snowpuppycoin/commit/df1be90ce)  Update links to obsolete documentation (#2162)
 - [`448e92f4a`](https://github.com/raptor3um/snowpuppycoin/commit/448e92f4a) GetOutPointPrivateSendRounds readability (#2149)
 - [`6da2837bd`](https://github.com/raptor3um/snowpuppycoin/commit/6da2837bd) InstantSend Integration tests (#2141)
-- [`8ee9333bc`](https://github.com/raptor3um/snowpuppycoin/commit/8ee9333bc) remove boost dependency from Snowpuppycoin-specific code (#2072)
+- [`8ee9333bc`](https://github.com/raptor3um/snowpuppycoin/commit/8ee9333bc) remove boost dependency from SnowPuppyCoin-specific code (#2072)
 - [`a527845e4`](https://github.com/raptor3um/snowpuppycoin/commit/a527845e4) Bump to 0.12.4.0 pre-release (#2167)
 
 Credits
@@ -712,7 +712,7 @@ As well as everyone that submitted issues, reviewed pull requests or helped tran
 Older releases
 ==============
 
-Snowpuppycoin was previously known as Darkcoin.
+SnowPuppyCoin was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -723,12 +723,12 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Snowpuppycoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
-Darkcoin was rebranded to Snowpuppycoin.
+SnowPuppyCoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
+Darkcoin was rebranded to SnowPuppyCoin.
 
-Snowpuppycoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+SnowPuppyCoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Snowpuppycoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+SnowPuppyCoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old release notes can be found here:
 

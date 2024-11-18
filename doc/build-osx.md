@@ -38,19 +38,19 @@ Next, follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-Snowpuppycoin Core is now available at `./src/snowpuppycoind`
+SnowPuppyCoin Core is now available at `./src/snowpuppycoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=snowpuppycoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/SnowpuppycoinCore/snowpuppycoin.conf"
+    echo -e "rpcuser=snowpuppycoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/SnowPuppyCoinCore/snowpuppycoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/SnowpuppycoinCore/snowpuppycoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/SnowPuppyCoinCore/snowpuppycoin.conf"
 
 The first time you run snowpuppycoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/SnowpuppycoinCore/debug.log
+    tail -f $HOME/Library/Application\ Support/SnowPuppyCoinCore/debug.log
 
 Other commands:
 -------

@@ -1,7 +1,7 @@
 # TOR SUPPORT IN SNOWPUPPYCOIN CORE
 =======================
 
-It is possible to run Snowpuppycoin Core as a Tor hidden service, and connect to such services.
+It is possible to run SnowPuppyCoin Core as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,10 +10,10 @@ See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#T
 for how to properly configure Tor.
 
 
-## 1. Run Snowpuppycoin Core behind a Tor proxy
+## 1. Run SnowPuppyCoin Core behind a Tor proxy
 ----------------------------------
 
-The first step is running Snowpuppycoin Core behind a Tor proxy. This will already make all
+The first step is running SnowPuppyCoin Core behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -44,7 +44,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
 	./snowpuppycoind -proxy=127.0.0.1:9050
 
 
-## 2. Run a Snowpuppycoin Core hidden server
+## 2. Run a SnowPuppyCoin Core hidden server
 -------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
@@ -59,7 +59,7 @@ versions of Tor see [Section 4](#4-automatically-listen-on-tor).*
 The directory can be different of course, but (both) port numbers should be equal to
 your snowpuppycoind's P2P listen port (9999 by default).
 
-	-externalip=X   You can tell Snowpuppycoin Core about its publicly reachable address using
+	-externalip=X   You can tell SnowPuppyCoin Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
 	                /var/lib/tor/snowpuppycoincore-service/hostname. Onion addresses are given
@@ -100,7 +100,7 @@ for normal IPv4/IPv6 communication, use:
 	./snowpuppycoind -onion=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -discover
 
 
-## 3. List of known Snowpuppycoin Core Tor relays
+## 3. List of known SnowPuppyCoin Core Tor relays
 ------------------------------------
 
 Note: All these nodes are hosted by smartnodehosting.com
@@ -121,13 +121,13 @@ Note: All these nodes are hosted by smartnodehosting.com
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
-Snowpuppycoin Core has been updated to make use of this.
+SnowPuppyCoin Core has been updated to make use of this.
 
 This means that if Tor is running (and proper authentication has been configured),
-Snowpuppycoin Core automatically creates a hidden service to listen on. This will positively
+SnowPuppyCoin Core automatically creates a hidden service to listen on. This will positively
 affect the number of available .onion nodes.
 
-This new feature is enabled by default if Snowpuppycoin Core is listening (`-listen`), and
+This new feature is enabled by default if SnowPuppyCoin Core is listening (`-listen`), and
 requires a Tor connection to work. It can be explicitly disabled with `-listenonion=0`
 and, if not disabled, configured using the `-torcontrol` and `-torpassword` settings.
 To show verbose debugging information, pass `-debug=tor`.
@@ -152,7 +152,7 @@ in the tor configuration file. The hashed password can be obtained with the comm
 
 ## 5. Privacy recommendations
 
-- Do not add anything but Snowpuppycoin Core ports to the hidden service created in section 2.
+- Do not add anything but SnowPuppyCoin Core ports to the hidden service created in section 2.
   If you run a web service too, create a new hidden service for that.
   Otherwise it is trivial to link them, which may reduce privacy. Hidden
   services created automatically (as in section 3) always have only one port

@@ -1,4 +1,4 @@
-// Copyright (c) 2021-2023 The Snowpuppycoin developers
+// Copyright (c) 2021-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,7 +9,7 @@
 #include <coins.h>
 #include <key_io.h>
 
-#define SPUPC_R 0x6d
+#define SPUPC_R 0x72
 #define SPUPC_T 0xfc 
 #define SPUPC_M 0xc0
 #define MAX_UNIQUE_ID 0xffffffffffffffff

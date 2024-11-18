@@ -21,7 +21,7 @@ public:
     /** Add wallets that should be opened to list of chain clients. */
     virtual void Construct(NodeContext &node) const = 0;
 
-    // Snowpuppycoin Specific WalletInitInterface
+    // SnowPuppyCoin Specific WalletInitInterface
     virtual void AutoLockSmartnodeCollaterals() const = 0;
 
     virtual void InitCoinJoinSettings() const = 0;

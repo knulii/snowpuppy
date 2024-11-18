@@ -76,12 +76,12 @@
       <translation>Địa chỉ nhận</translation>
     </message>
     <message>
-      <source>These are your Snowpuppycoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-      <translation>Đây là các địa chỉ Snowpuppycoin của bạn để gửi thanh toán. Luôn luôn kiểm tra số tiền và địa chỉ nhận trước khi bạn gửi tiền.</translation>
+      <source>These are your SnowPuppyCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+      <translation>Đây là các địa chỉ SnowPuppyCoin của bạn để gửi thanh toán. Luôn luôn kiểm tra số tiền và địa chỉ nhận trước khi bạn gửi tiền.</translation>
     </message>
     <message>
-      <source>These are your Snowpuppycoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-      <translation>Đây là các địa chỉ Snowpuppycoin của bạn để nhận thanh toán. Gợi ý là sử dụng một địa chỉ nhận mới cho mỗi giao dịch.</translation>
+      <source>These are your SnowPuppyCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+      <translation>Đây là các địa chỉ SnowPuppyCoin của bạn để nhận thanh toán. Gợi ý là sử dụng một địa chỉ nhận mới cho mỗi giao dịch.</translation>
     </message>
     <message>
       <source>&amp;Copy Address</source>
@@ -314,12 +314,12 @@
   <context>
     <name>BitcoinGUI</name>
     <message>
-      <source>A fatal error occurred. Snowpuppycoin Core can no longer continue safely and will quit.</source>
-      <translation>Có lỗi nghiêm trọng xảy ra. Snowpuppycoin Core không thể tiếp tục một cách an toàn được nên phải thoát ra.</translation>
+      <source>A fatal error occurred. SnowPuppyCoin Core can no longer continue safely and will quit.</source>
+      <translation>Có lỗi nghiêm trọng xảy ra. SnowPuppyCoin Core không thể tiếp tục một cách an toàn được nên phải thoát ra.</translation>
     </message>
     <message>
-      <source>Snowpuppycoin Core</source>
-      <translation>Snowpuppycoin Core</translation>
+      <source>SnowPuppyCoin Core</source>
+      <translation>SnowPuppyCoin Core</translation>
     </message>
     <message>
       <source>Wallet</source>
@@ -342,8 +342,8 @@
       <translation>&amp;Gửi</translation>
     </message>
     <message>
-      <source>Send coins to a Snowpuppycoin address</source>
-      <translation>Gửi tiền vào địa chỉ Snowpuppycoin</translation>
+      <source>Send coins to a SnowPuppyCoin address</source>
+      <translation>Gửi tiền vào địa chỉ SnowPuppyCoin</translation>
     </message>
     <message>
       <source>&amp;Receive</source>
@@ -378,8 +378,8 @@
       <translation>Thoát ứng dụng</translation>
     </message>
     <message>
-      <source>Show information about Snowpuppycoin Core</source>
-      <translation>Hiển thị thông tin về Snowpuppycoin Core</translation>
+      <source>Show information about SnowPuppyCoin Core</source>
+      <translation>Hiển thị thông tin về SnowPuppyCoin Core</translation>
     </message>
     <message>
       <source>About &amp;Qt</source>
@@ -398,7 +398,7 @@
       <translation>&amp;Khoảng %1</translation>
     </message>
     <message>
-      <source>Send %1 funds to a Snowpuppycoin address</source>
+      <source>Send %1 funds to a SnowPuppyCoin address</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
@@ -454,16 +454,16 @@
       <translation>Ký vào &amp;thông điệp...</translation>
     </message>
     <message>
-      <source>Sign messages with your Snowpuppycoin addresses to prove you own them</source>
-      <translation>Ký vào thông điệp với địa chỉ Snowpuppycoin để chứng minh bạn là chủ của chúng</translation>
+      <source>Sign messages with your SnowPuppyCoin addresses to prove you own them</source>
+      <translation>Ký vào thông điệp với địa chỉ SnowPuppyCoin để chứng minh bạn là chủ của chúng</translation>
     </message>
     <message>
       <source>&amp;Verify message...</source>
       <translation>&amp;Kiểm tra thông điệp...</translation>
     </message>
     <message>
-      <source>Verify messages to ensure they were signed with specified Snowpuppycoin addresses</source>
-      <translation>Kiểm tra thông điệp để đảm bảo rằng nó đã được ký bằng địa chỉ Snowpuppycoin nhất định</translation>
+      <source>Verify messages to ensure they were signed with specified SnowPuppyCoin addresses</source>
+      <translation>Kiểm tra thông điệp để đảm bảo rằng nó đã được ký bằng địa chỉ SnowPuppyCoin nhất định</translation>
     </message>
     <message>
       <source>&amp;Information</source>
@@ -550,8 +550,8 @@
       <translation>&amp;Các Tuỳ chọn dòng lệnh</translation>
     </message>
     <message>
-      <source>Show the %1 help message to get a list with possible Snowpuppycoin command-line options</source>
-      <translation>Hiển thị %1 tin nhắn hỗ trợ để nhận được danh sách Snowpuppycoin command-line khả dụng</translation>
+      <source>Show the %1 help message to get a list with possible SnowPuppyCoin command-line options</source>
+      <translation>Hiển thị %1 tin nhắn hỗ trợ để nhận được danh sách SnowPuppyCoin command-line khả dụng</translation>
     </message>
     <message>
       <source>default wallet</source>
@@ -599,9 +599,9 @@
       <translation>Bảng Thanh công cụ</translation>
     </message>
     <message numerus="yes">
-      <source>%n active connection(s) to Snowpuppycoin network</source>
+      <source>%n active connection(s) to SnowPuppyCoin network</source>
       <translation>
-        <numerusform>%n kết nối hiện thời tới mạng lưới của Snowpuppycoin</numerusform>
+        <numerusform>%n kết nối hiện thời tới mạng lưới của SnowPuppyCoin</numerusform>
       </translation>
     </message>
     <message>
@@ -983,8 +983,8 @@
       <translation>Sửa địa chỉ gửi</translation>
     </message>
     <message>
-      <source>The entered address "%1" is not a valid Snowpuppycoin address.</source>
-      <translation>Địa chỉ vừa nhập "%1" không phải địa chỉ Snowpuppycoin hợp lệ.</translation>
+      <source>The entered address "%1" is not a valid SnowPuppyCoin address.</source>
+      <translation>Địa chỉ vừa nhập "%1" không phải địa chỉ SnowPuppyCoin hợp lệ.</translation>
     </message>
     <message>
       <source>The entered address "%1" is already in the address book.</source>
@@ -1045,7 +1045,7 @@
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <source>&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 gives you true financial privacy by obscuring the origins of your funds. All the Snowpuppycoin in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The %1 process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;%1 begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 SPUPC, 0.01 SPUPC, 0.1 SPUPC, 1 SPUPC and 10 SPUPC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "smartnodes." These smartnodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the smartnodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The smartnode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of %1 makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have %1 disabled. &lt;hr&gt;For more information, see the &lt;a style="%2" href="%3"&gt;%1 documentation&lt;/a&gt;.</source>
+      <source>&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 gives you true financial privacy by obscuring the origins of your funds. All the SnowPuppyCoin in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The %1 process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;%1 begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 SPUPC, 0.01 SPUPC, 0.1 SPUPC, 1 SPUPC and 10 SPUPC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "smartnodes." These smartnodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the smartnodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The smartnode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of %1 makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have %1 disabled. &lt;hr&gt;For more information, see the &lt;a style="%2" href="%3"&gt;%1 documentation&lt;/a&gt;.</source>
       <translation type="unfinished"></translation>
     </message>
   </context>
@@ -1092,8 +1092,8 @@
       <translation>Gần đúng %1 GB of data sẽ được lưu giữ trong danh mục này.</translation>
     </message>
     <message>
-      <source>%1 will download and store a copy of the Snowpuppycoin block chain.</source>
-      <translation>%1 sẽ download và lưu trữ một bản copy của Snowpuppycoin block chain.</translation>
+      <source>%1 will download and store a copy of the SnowPuppyCoin block chain.</source>
+      <translation>%1 sẽ download và lưu trữ một bản copy của SnowPuppyCoin block chain.</translation>
     </message>
     <message>
       <source>The wallet will also be stored in this directory.</source>
@@ -1123,12 +1123,12 @@
       <translation>Form</translation>
     </message>
     <message>
-      <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Snowpuppycoin network, as detailed below.</source>
-      <translation>Những giao dịch mới có thể chưa hiện ra, và do đó số dư trong ví của bạn có thể chưa chính xác. Những thông tin này sẽ chính xác một khi ví của bạn đã hoàn tất việc đồng bộ với mạng lưới của Snowpuppycoin, như cụ thể bên dưới.</translation>
+      <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the SnowPuppyCoin network, as detailed below.</source>
+      <translation>Những giao dịch mới có thể chưa hiện ra, và do đó số dư trong ví của bạn có thể chưa chính xác. Những thông tin này sẽ chính xác một khi ví của bạn đã hoàn tất việc đồng bộ với mạng lưới của SnowPuppyCoin, như cụ thể bên dưới.</translation>
     </message>
     <message>
-      <source>Attempting to spend Snowpuppycoin that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-      <translation>Việc chi tiêu Snowpuppycoin khi mà các giao dịch của nó chưa được đồng bộ hết sẽ không được chấp nhận bởi mạng lưới.</translation>
+      <source>Attempting to spend SnowPuppyCoin that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+      <translation>Việc chi tiêu SnowPuppyCoin khi mà các giao dịch của nó chưa được đồng bộ hết sẽ không được chấp nhận bởi mạng lưới.</translation>
     </message>
     <message>
       <source>Number of blocks left</source>
@@ -1285,8 +1285,8 @@
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <source>Automatically open the Snowpuppycoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-      <translation>Tự động mở cổng cho phần mềm Snowpuppycoin Core trên rounter. Điều này chỉ hoạt động được khi rounter của bạn hỗ trợ UpnP và tính năng đó được bật lên.</translation>
+      <source>Automatically open the SnowPuppyCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+      <translation>Tự động mở cổng cho phần mềm SnowPuppyCoin Core trên rounter. Điều này chỉ hoạt động được khi rounter của bạn hỗ trợ UpnP và tính năng đó được bật lên.</translation>
     </message>
     <message>
       <source>Accept connections from outside.</source>
@@ -1297,8 +1297,8 @@
       <translation>Cho phép &amp;nhận kết nối</translation>
     </message>
     <message>
-      <source>Connect to the Snowpuppycoin network through a SOCKS5 proxy.</source>
-      <translation>Kết nối với mạng lưới Snowpuppycoin thông qua một SOCK5 proxy.</translation>
+      <source>Connect to the SnowPuppyCoin network through a SOCKS5 proxy.</source>
+      <translation>Kết nối với mạng lưới SnowPuppyCoin thông qua một SOCK5 proxy.</translation>
     </message>
     <message>
       <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1397,8 +1397,8 @@
       <translation>Tor</translation>
     </message>
     <message>
-      <source>Connect to the Snowpuppycoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-      <translation>Kết nối với mạng lưới Snowpuppycoin thông qua các proxy SOCKS5 riêng biệt cho các dịch vụ ẩn danh Tor.</translation>
+      <source>Connect to the SnowPuppyCoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+      <translation>Kết nối với mạng lưới SnowPuppyCoin thông qua các proxy SOCKS5 riêng biệt cho các dịch vụ ẩn danh Tor.</translation>
     </message>
     <message>
       <source>Show only a tray icon after minimizing the window.</source>
@@ -1498,8 +1498,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>Biểu mẫu</translation>
     </message>
     <message>
-      <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Snowpuppycoin network after a connection is established, but this process has not completed yet.</source>
-      <translation>Thông tin được hiển thị có thể đã lỗi thời. Ví của bạn sẽ tự động đồng bộ với mạng lưới Snowpuppycoin sau khi kết nối được thiết lập, tuy nhiên quá trình này chưa hoàn thành.</translation>
+      <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SnowPuppyCoin network after a connection is established, but this process has not completed yet.</source>
+      <translation>Thông tin được hiển thị có thể đã lỗi thời. Ví của bạn sẽ tự động đồng bộ với mạng lưới SnowPuppyCoin sau khi kết nối được thiết lập, tuy nhiên quá trình này chưa hoàn thành.</translation>
     </message>
     <message>
       <source>Available:</source>
@@ -1741,8 +1741,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>Địa chỉ thanh toán không hợp lệ %1</translation>
     </message>
     <message>
-      <source>URI cannot be parsed! This can be caused by an invalid Snowpuppycoin address or malformed URI parameters.</source>
-      <translation>URI không thể phân tích. Nó có thể bởi địa chỉ Snowpuppycoin không hợp lệ hoặc thông số URI dị hình.</translation>
+      <source>URI cannot be parsed! This can be caused by an invalid SnowPuppyCoin address or malformed URI parameters.</source>
+      <translation>URI không thể phân tích. Nó có thể bởi địa chỉ SnowPuppyCoin không hợp lệ hoặc thông số URI dị hình.</translation>
     </message>
     <message>
       <source>Payment request file handling</source>
@@ -1887,8 +1887,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>Số lượng</translation>
     </message>
     <message>
-      <source>Enter a Snowpuppycoin address (e.g. %1)</source>
-      <translation>Hãy nhập một địa chỉ Snowpuppycoin (VD: %1)</translation>
+      <source>Enter a SnowPuppyCoin address (e.g. %1)</source>
+      <translation>Hãy nhập một địa chỉ SnowPuppyCoin (VD: %1)</translation>
     </message>
     <message>
       <source>Appearance Setup</source>
@@ -2509,8 +2509,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
   <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-      <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Snowpuppycoin network.</source>
-      <translation>Một thông điệp tuỳ chọn để đính vào yêu cầu thanh toán, nó sẽ hiển thị khi yêu cầu được mở. Chú ý: Thông điệp sẽ không được gửi thông qua mạng lưới Snowpuppycoin.</translation>
+      <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the SnowPuppyCoin network.</source>
+      <translation>Một thông điệp tuỳ chọn để đính vào yêu cầu thanh toán, nó sẽ hiển thị khi yêu cầu được mở. Chú ý: Thông điệp sẽ không được gửi thông qua mạng lưới SnowPuppyCoin.</translation>
     </message>
     <message>
       <source>&amp;Message:</source>
@@ -2521,8 +2521,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>Một nhãn tuỳ chọn để liên kết với địa chỉ nhận mới.</translation>
     </message>
     <message>
-      <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Snowpuppycoin network.</source>
-      <translation>Một thông điệp tuỳ chọn để đính vào yêu cầu thanh toán, nó sẽ hiển thị khi yêu cầu được mở.&lt;br&gt;Chú ý: Thông điệp sẽ không được gửi thông qua mạng lưới Snowpuppycoin.</translation>
+      <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the SnowPuppyCoin network.</source>
+      <translation>Một thông điệp tuỳ chọn để đính vào yêu cầu thanh toán, nó sẽ hiển thị khi yêu cầu được mở.&lt;br&gt;Chú ý: Thông điệp sẽ không được gửi thông qua mạng lưới SnowPuppyCoin.</translation>
     </message>
     <message>
       <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2994,8 +2994,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       </translation>
     </message>
     <message>
-      <source>Warning: Invalid Snowpuppycoin address</source>
-      <translation>Cảnh báo: Địa chỉ Snowpuppycoin không hợp lệ</translation>
+      <source>Warning: Invalid SnowPuppyCoin address</source>
+      <translation>Cảnh báo: Địa chỉ SnowPuppyCoin không hợp lệ</translation>
     </message>
     <message>
       <source>Warning: Unknown change address</source>
@@ -3025,8 +3025,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>Trả &amp;Cho</translation>
     </message>
     <message>
-      <source>The Snowpuppycoin address to send the payment to</source>
-      <translation>Địa chỉ Snowpuppycoin để gửi thanh toán</translation>
+      <source>The SnowPuppyCoin address to send the payment to</source>
+      <translation>Địa chỉ SnowPuppyCoin để gửi thanh toán</translation>
     </message>
     <message>
       <source>Choose previously used address</source>
@@ -3065,8 +3065,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>&amp;Số tiền:</translation>
     </message>
     <message>
-      <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of Snowpuppycoin than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-      <translation>Phí sẽ được trừ trong khoản tiền mà bạn gửi. Bên nhận sẽ nhận được một khoản nhỏ hơn số Snowpuppycoin mà bạn nhập vào ở trong trường số lượng. Nếu có nhiều người nhận được chọn, phí được chia đều cho mọi người.</translation>
+      <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of SnowPuppyCoin than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+      <translation>Phí sẽ được trừ trong khoản tiền mà bạn gửi. Bên nhận sẽ nhận được một khoản nhỏ hơn số SnowPuppyCoin mà bạn nhập vào ở trong trường số lượng. Nếu có nhiều người nhận được chọn, phí được chia đều cho mọi người.</translation>
     </message>
     <message>
       <source>S&amp;ubtract fee from amount</source>
@@ -3081,8 +3081,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>Thông điệp:</translation>
     </message>
     <message>
-      <source>A message that was attached to the snowpuppycoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Snowpuppycoin network.</source>
-      <translation>Một thông điệp được đính với snowpuppycoin: URI đó sẽ được lưu trữ với các giao dịch cho các bạn tham khảo. Lưu ý: Thông điệp này sẽ không được gửi qua mạng Snowpuppycoin. </translation>
+      <source>A message that was attached to the snowpuppycoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the SnowPuppyCoin network.</source>
+      <translation>Một thông điệp được đính với snowpuppycoin: URI đó sẽ được lưu trữ với các giao dịch cho các bạn tham khảo. Lưu ý: Thông điệp này sẽ không được gửi qua mạng SnowPuppyCoin. </translation>
     </message>
     <message>
       <source>Future</source>
@@ -3158,12 +3158,12 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>&amp;Ký thông điệp</translation>
     </message>
     <message>
-      <source>You can sign messages/agreements with your addresses to prove you can receive Snowpuppycoin sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-      <translation>Bạn có thể ký vào thông điệp/thoả thuận với địa chỉ của bạn để chứng minh bạn có thể nhận Snowpuppycoin đã gửi cho họ. Hãy cẩn thận không ký vào những gì mơ hồ hay ngẫu nhiên, như là thứ lừa đảo để lừa bạn ký xác nhận của bạn vào đó cho họ. Chỉ ký vào những gì mà bạn hoàn thoàn đồng ý.</translation>
+      <source>You can sign messages/agreements with your addresses to prove you can receive SnowPuppyCoin sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+      <translation>Bạn có thể ký vào thông điệp/thoả thuận với địa chỉ của bạn để chứng minh bạn có thể nhận SnowPuppyCoin đã gửi cho họ. Hãy cẩn thận không ký vào những gì mơ hồ hay ngẫu nhiên, như là thứ lừa đảo để lừa bạn ký xác nhận của bạn vào đó cho họ. Chỉ ký vào những gì mà bạn hoàn thoàn đồng ý.</translation>
     </message>
     <message>
-      <source>The Snowpuppycoin address to sign the message with</source>
-      <translation>Địa chỉ Snowpuppycoin để ký cho thông điệp</translation>
+      <source>The SnowPuppyCoin address to sign the message with</source>
+      <translation>Địa chỉ SnowPuppyCoin để ký cho thông điệp</translation>
     </message>
     <message>
       <source>Choose previously used address</source>
@@ -3194,8 +3194,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>Copy chữ ký hiện tại vào bộ đệm của hệ thống</translation>
     </message>
     <message>
-      <source>Sign the message to prove you own this Snowpuppycoin address</source>
-      <translation>Ký vào thông điệp để chứng tỏ bạn sở hữu địa chỉ Snowpuppycoin</translation>
+      <source>Sign the message to prove you own this SnowPuppyCoin address</source>
+      <translation>Ký vào thông điệp để chứng tỏ bạn sở hữu địa chỉ SnowPuppyCoin</translation>
     </message>
     <message>
       <source>Sign &amp;Message</source>
@@ -3218,12 +3218,12 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
       <translation>Hãy nhập vào địa chỉ của người nhận, thông điệp (hãy đảm bảo rằng bạn copy cả dấu xuống dòng, dấu cách, dấu tab,... một cách chính xác) và chữ ký bên dưới để kiểm tra thông điệp. Hãy cẩn thận để không đọc thêm vào phần chữ ký mà nó dùng để ký, để tránh bị đánh lừa bởi kiểu tấn công người trung gian. Chú ý đây chỉ để chứng minh chữ ký của bên nhận với địa chỉ đó, nó không thể chứng minh người gửi hoặc bất kỳ giao dich nào!</translation>
     </message>
     <message>
-      <source>The Snowpuppycoin address the message was signed with</source>
-      <translation>Địa chỉ Snowpuppycoin mà thông điệp được ký bởi</translation>
+      <source>The SnowPuppyCoin address the message was signed with</source>
+      <translation>Địa chỉ SnowPuppyCoin mà thông điệp được ký bởi</translation>
     </message>
     <message>
-      <source>Verify the message to ensure it was signed with the specified Snowpuppycoin address</source>
-      <translation>Kiểm tra lại thông điệp để đảm bảo rằng nó được ký với địa chỉ Snowpuppycoin cụ thể</translation>
+      <source>Verify the message to ensure it was signed with the specified SnowPuppyCoin address</source>
+      <translation>Kiểm tra lại thông điệp để đảm bảo rằng nó được ký với địa chỉ SnowPuppyCoin cụ thể</translation>
     </message>
     <message>
       <source>Verify &amp;Message</source>
@@ -4104,8 +4104,8 @@ https://www.transifex.com/projects/p/snowpuppycoin/</translation>
   <context>
     <name>snowpuppycoin-core</name>
     <message>
-      <source>Snowpuppycoin Core</source>
-      <translation>Snowpuppycoin Core</translation>
+      <source>SnowPuppyCoin Core</source>
+      <translation>SnowPuppyCoin Core</translation>
     </message>
     <message>
       <source>The %s developers</source>

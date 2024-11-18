@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2021 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -68,7 +68,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Snowpuppycoin Core cannot be compiled without assertions."
+# error "SnowPuppyCoin Core cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001
@@ -650,7 +650,7 @@ static bool AcceptToMemoryPoolWorker(const CChainParams &chainparams, CTxMemPool
         for (const CTxIn &txin: tx.vin) {
             const CTransaction *ptxConflicting = pool.GetConflictTx(txin.prevout);
             if (ptxConflicting) {
-                // Transaction conflicts with mempool and RBF doesn't exist in Snowpuppycoin
+                // Transaction conflicts with mempool and RBF doesn't exist in SnowPuppyCoin
                 return state.Invalid(false, REJECT_DUPLICATE, "txn-mempool-conflict");
             }
         }
@@ -2043,7 +2043,7 @@ static int64_t nTimeSubsidy = 0;
 static int64_t nTimeValueValid = 0;
 static int64_t nTimePayeeValid = 0;
 static int64_t nTimeProcessSpecial = 0;
-static int64_t nTimeSnowpuppycoinSpecific = 0;
+static int64_t nTimeSnowPuppyCoinSpecific = 0;
 static int64_t nTimeConnect = 0;
 static int64_t nTimeIndex = 0;
 static int64_t nTimeCallbacks = 0;
@@ -2566,9 +2566,9 @@ bool CChainState::ConnectBlock(const CBlock &block, CValidationState &state, CBl
              MILLI * (nTime5_4 - nTime5_3), nTimePayeeValid * MICRO, nTimePayeeValid * MILLI / nBlocksTotal);
 
     int64_t nTime5 = GetTimeMicros();
-    nTimeSnowpuppycoinSpecific += nTime5 - nTime4;
-    LogPrint(BCLog::BENCHMARK, "    - Snowpuppycoin specific: %.2fms [%.2fs (%.2fms/blk)]\n", MILLI * (nTime5 - nTime4),
-             nTimeSnowpuppycoinSpecific * MICRO, nTimeSnowpuppycoinSpecific * MILLI / nBlocksTotal);
+    nTimeSnowPuppyCoinSpecific += nTime5 - nTime4;
+    LogPrint(BCLog::BENCHMARK, "    - SnowPuppyCoin specific: %.2fms [%.2fs (%.2fms/blk)]\n", MILLI * (nTime5 - nTime4),
+             nTimeSnowPuppyCoinSpecific * MICRO, nTimeSnowPuppyCoinSpecific * MILLI / nBlocksTotal);
 
     // END SNOWPUPPYCOIN
 

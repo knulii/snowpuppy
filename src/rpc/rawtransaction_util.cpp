@@ -108,7 +108,7 @@ ConstructTransaction(const UniValue &inputs_in, const UniValue &outputs_in, cons
         } else {
             CTxDestination destination = DecodeDestination(name_);
             if (!IsValidDestination(destination)) {
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid Snowpuppycoin address: ") + name_);
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, std::string("Invalid SnowPuppyCoin address: ") + name_);
             }
 
             if (!destinations.insert(destination).second) {

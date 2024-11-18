@@ -1,5 +1,5 @@
 [Unit]
-Description=Snowpuppycoin's distributed currency daemon
+Description=SnowPuppyCoin's distributed currency daemon
 After=network.target
 
 [Service]

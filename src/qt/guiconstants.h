@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,10 +18,10 @@ static const int MODEL_UPDATE_DELAY_SYNC = 10000;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* SnowpuppycoinGUI -- Size of icons in status bar */
+/* SnowPuppyCoinGUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 18;
 
-/* SnowpuppycoinGUI -- Size of button icons e.g. in SendCoinEntry or SignVerifyMessageDialog */
+/* SnowPuppyCoinGUI -- Size of button icons e.g. in SendCoinEntry or SignVerifyMessageDialog */
 static const int BUTTON_ICONSIZE = 23;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -47,11 +47,11 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Snowpuppycoin"
+#define QAPP_ORG_NAME "SnowPuppyCoin"
 #define QAPP_ORG_DOMAIN "snowpuppycoin.com"
-#define QAPP_APP_NAME_DEFAULT "Snowpuppycoin-Qt"
-#define QAPP_APP_NAME_TESTNET "Snowpuppycoin-Qt-testnet"
-#define QAPP_APP_NAME_DEVNET "Snowpuppycoin-Qt-%s"
-#define QAPP_APP_NAME_REGTEST "Snowpuppycoin-Qt-regtest"
+#define QAPP_APP_NAME_DEFAULT "SnowPuppyCoin-Qt"
+#define QAPP_APP_NAME_TESTNET "SnowPuppyCoin-Qt-testnet"
+#define QAPP_APP_NAME_DEVNET "SnowPuppyCoin-Qt-%s"
+#define QAPP_APP_NAME_REGTEST "SnowPuppyCoin-Qt-regtest"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

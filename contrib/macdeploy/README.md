@@ -6,7 +6,7 @@ The `macdeployqtplus` script should not be run manually. Instead, after building
 make deploy
 ```
 
-When complete, it will have produced `Snowpuppycoin-Core.dmg`.
+When complete, it will have produced `SnowPuppyCoin-Core.dmg`.
 
 ## SDK Extraction
 

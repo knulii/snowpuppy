@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1445,8 +1445,8 @@ static UniValue gettxout(const JSONRPCRequest &request) {
                                         {RPCResult::Type::STR_HEX, "hex", ""},
                                         {RPCResult::Type::NUM, "reqSigs", "Number of required signatures"},
                                         {RPCResult::Type::STR_HEX, "type", "The type, eg pubkeyhash"},
-                                        {RPCResult::Type::ARR, "addresses", "array of Snowpuppycoin addresses",
-                                         {{RPCResult::Type::STR, "address", "Snowpuppycoin address"}}},
+                                        {RPCResult::Type::ARR, "addresses", "array of SnowPuppyCoin addresses",
+                                         {{RPCResult::Type::STR, "address", "SnowPuppyCoin address"}}},
                                 }},
                                {RPCResult::Type::BOOL, "coinbase", "Coinbase or not"},
                        }},

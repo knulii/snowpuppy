@@ -143,7 +143,7 @@ bool BerkeleyEnvironment::Open(bool retry) {
     fs::path pathIn = strPath;
     TryCreateDirectories(pathIn);
     if (!LockDirectory(pathIn, ".walletlock")) {
-        LogPrintf("Cannot obtain a lock on wallet directory %s. Another instance of Snowpuppycoin may be using it.\n",
+        LogPrintf("Cannot obtain a lock on wallet directory %s. Another instance of SnowPuppyCoin may be using it.\n",
                   strPath);
         return false;
     }

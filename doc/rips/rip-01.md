@@ -1,5 +1,5 @@
 <pre>
-  Snowpuppycoin Improvement Proposal
+  SnowPuppyCoin Improvement Proposal
   RIP: 01
   Title: Round Voting
   Author: Jami Bradley <codeiskey@protonmail.com>

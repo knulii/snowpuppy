@@ -1,4 +1,4 @@
-Snowpuppycoin Core version 1.13.17.00
+SnowPuppyCoin Core version 1.13.17.00
 ==========================
 
 Release is now available from:

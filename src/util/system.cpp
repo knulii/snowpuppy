@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2021 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -65,7 +65,7 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-//Snowpuppycoin only features
+//SnowPuppyCoin only features
 bool fSmartnodeMode = false;
 bool fDisableGovernance = false;
 const std::string gCoinJoinName = "CoinJoin";
@@ -711,13 +711,13 @@ void PrintExceptionContinue(const std::exception_ptr pex, const char *pszExcepti
 }
 
 fs::path GetDefaultDataDir() {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\SnowpuppycoinCore
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\SnowpuppycoinCore
-    // Mac: ~/Library/Application Support/SnowpuppycoinCore
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\SnowPuppyCoinCore
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\SnowPuppyCoinCore
+    // Mac: ~/Library/Application Support/SnowPuppyCoinCore
     // Unix: ~/.snowpuppycoincore
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "SnowpuppycoinCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "SnowPuppyCoinCore";
 #else
     fs::path pathRet;
     char *pszHome = getenv("HOME");
@@ -727,7 +727,7 @@ fs::path GetDefaultDataDir() {
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/SnowpuppycoinCore";
+    return pathRet / "Library/Application Support/SnowPuppyCoinCore";
 #else
     // Unix
     return pathRet / ".snowpuppycoincore";
@@ -1255,9 +1255,9 @@ std::string CopyrightHolders(const std::string &strPrefix, unsigned int nStartYe
     const auto copyright_info = strprintf(_(COPYRIGHT_HOLDERS), COPYRIGHT_HOLDERS_SUBSTITUTION);
     std::string strCopyrightHolders = strPrefix + strprintf(" %u-%u ", 2021, nEndYear) + copyright_info;
 
-    // Check for untranslated substitution to make sure Snowpuppycoin Core copyright is not removed by accident
-    if (copyright_info.find("Snowpuppycoin") == std::string::npos) {
-        strCopyrightHolders += "\n" + strPrefix + strprintf(" %u-%u ", 2020, nEndYear) + "The Snowpuppycoin developers";
+    // Check for untranslated substitution to make sure SnowPuppyCoin Core copyright is not removed by accident
+    if (copyright_info.find("SnowPuppyCoin") == std::string::npos) {
+        strCopyrightHolders += "\n" + strPrefix + strprintf(" %u-%u ", 2020, nEndYear) + "The SnowPuppyCoin developers";
     }
     // Check for untranslated substitution to make sure Bitcoin Core copyright is not removed by accident
     if (copyright_info.find("Dash Core") == std::string::npos) {

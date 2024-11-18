@@ -68,9 +68,9 @@ can then be controlled by group membership.
 ### Mac OS X
 
 Binary:              `/usr/local/bin/snowpuppycoind`  
-Configuration file:  `~/Library/Application Support/SnowpuppycoinCore/snowpuppycoin.conf`  
-Data directory:      `~/Library/Application Support/SnowpuppycoinCore`
-Lock file:           `~/Library/Application Support/SnowpuppycoinCore/.lock`
+Configuration file:  `~/Library/Application Support/SnowPuppyCoinCore/snowpuppycoin.conf`  
+Data directory:      `~/Library/Application Support/SnowPuppyCoinCore`
+Lock file:           `~/Library/Application Support/SnowPuppyCoinCore/.lock`
 
 Installing Service Configuration
 -----------------------------------

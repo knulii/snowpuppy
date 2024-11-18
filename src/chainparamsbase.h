@@ -11,7 +11,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between snowpuppycoin-cli and snowpuppycoind)
- * of a given instance of the Snowpuppycoin system.
+ * of a given instance of the SnowPuppyCoin system.
  */
 class CBaseChainParams {
 public:

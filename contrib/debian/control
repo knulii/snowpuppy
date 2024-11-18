@@ -30,10 +30,10 @@ Package: snowpuppycoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Snowpuppycoin is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Snowpuppycoin uses peer-to-peer
+ SnowPuppyCoin is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. SnowPuppyCoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Snowpuppycoin Core
+ and issuing money are carried out collectively by the network. SnowPuppyCoin Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides the daemon, snowpuppycoind, and the CLI tool
@@ -43,10 +43,10 @@ Package: snowpuppycoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Snowpuppycoin is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Snowpuppycoin uses peer-to-peer
+ SnowPuppyCoin is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. SnowPuppyCoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Snowpuppycoin Core
+ and issuing money are carried out collectively by the network. SnowPuppyCoin Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides Snowpuppycoin-Qt, a GUI for Snowpuppycoin based on Qt.
+ This package provides SnowPuppyCoin-Qt, a GUI for SnowPuppyCoin based on Qt.

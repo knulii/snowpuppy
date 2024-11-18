@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2020 The Bitcoin Core developers
-// Copyright (c)      2022 The Snowpuppycoin developers
+// Copyright (c)      2022 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING ot https://www.opensource.org/licenses/mit-license.php.
 

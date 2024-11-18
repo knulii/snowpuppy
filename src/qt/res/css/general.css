@@ -1003,11 +1003,11 @@ AboutDialog
 
 QDialog#AboutDialog QLabel#label,
 QDialog#AboutDialog QLabel#copyrightLabel,
-QDialog#AboutDialog QLabel#label_2 { /* About Snowpuppycoin Contents */
+QDialog#AboutDialog QLabel#label_2 { /* About SnowPuppyCoin Contents */
     margin-left: 10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About Snowpuppycoin text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About SnowPuppyCoin text */
     margin-right: 10px;
 }
 

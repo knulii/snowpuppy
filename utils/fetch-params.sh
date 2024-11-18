@@ -6,7 +6,7 @@ set -eu
 uname_S=$(uname -s 2>/dev/null || echo not)
 
 if [ "$uname_S" = "Darwin" ]; then
-    PARAMS_DIR="$HOME/Library/Application Support/SnowpuppycoinParams"
+    PARAMS_DIR="$HOME/Library/Application Support/SnowPuppyCoinParams"
 else
     PARAMS_DIR="$HOME/.snowpuppycoin-params"
 fi
@@ -85,7 +85,7 @@ EOF
 fetch_failure() {
     cat >&2 <<EOF
 
-Failed to fetch the Snowpuppycoin parameters!
+Failed to fetch the SnowPuppyCoin parameters!
 Try installing one of the following programs and make sure you're online:
 
 # * ipfs
@@ -178,7 +178,7 @@ main() {
     cat <<EOF
 SPUPC - fetch-params.sh
 
-This script will fetch the Snowpuppycoin SNARK parameters and verify their
+This script will fetch the SnowPuppyCoin SNARK parameters and verify their
 integrity with sha256sum.
 
 If they already exist locally, it will exit now and do nothing else.
@@ -190,7 +190,7 @@ EOF
         mkdir -p "$PARAMS_DIR"
         README_PATH="$PARAMS_DIR/README"
         cat >> "$README_PATH" <<EOF
-This directory stores common Snowpuppycoin SNARK parameters. Note that it is
+This directory stores common SnowPuppyCoin SNARK parameters. Note that it is
 distinct from the daemon's -datadir argument because the parameters are
 large and may be shared across multiple distinct -datadir's such as when
 setting up test networks.

@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -95,13 +95,13 @@ AddressBookPage::AddressBookPage(Mode _mode, Tabs _tab, QWidget *parent) :
     switch (tab) {
         case SendingTab:
             ui->labelExplanation->setText(
-                    tr("These are your Snowpuppycoin addresses for sending payments. Always check the amount and the receiving address before sending coins."));
+                    tr("These are your SnowPuppyCoin addresses for sending payments. Always check the amount and the receiving address before sending coins."));
             ui->deleteAddress->setVisible(true);
             ui->newAddress->setVisible(true);
             break;
         case ReceivingTab:
             ui->labelExplanation->setText(
-                    tr("These are your Snowpuppycoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction."));
+                    tr("These are your SnowPuppyCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction."));
             ui->deleteAddress->setVisible(false);
             ui->newAddress->setVisible(false);
             break;
@@ -305,7 +305,7 @@ void AddressBookPage::on_exportButton_clicked() {
     writer.addColumn("Address", AddressTableModel::Address, Qt::EditRole);
 
     if (!writer.write()) {
-        //: %1 is a name of the file (e.g.: "addressbook.csv") that the Snowpuppycoin addresses were exported to.
+        //: %1 is a name of the file (e.g.: "addressbook.csv") that the SnowPuppyCoin addresses were exported to.
         QMessageBox::critical(this, tr("Exporting Failed"),
                               tr("There was an error trying to save the address list to %1. Please try again.",
                                  "An error message.").arg(filename));

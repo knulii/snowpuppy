@@ -37,7 +37,7 @@ public:
     //! Add wallets that should be opened to list of chain clients.
     void Construct(NodeContext &node) const override;
 
-    // Snowpuppycoin Specific Wallet Init
+    // SnowPuppyCoin Specific Wallet Init
     void AutoLockSmartnodeCollaterals() const override;
 
     void InitCoinJoinSettings() const override;

@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2019 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -50,7 +50,7 @@
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// SnowpuppycoinMiner
+// SnowPuppyCoinMiner
 //
 
 //
@@ -550,8 +550,8 @@ static bool ProcessBlockFound(const CBlock *pblock, const CChainParams &chainpar
     return true;
 }
 
-void static SnowpuppycoinMiner(const CChainParams& chainparams, NodeContext& node) {
-    LogPrintf("SnowpuppycoinMiner -- started\n");
+void static SnowPuppyCoinMiner(const CChainParams& chainparams, NodeContext& node) {
+    LogPrintf("SnowPuppyCoinMiner -- started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     util::ThreadRename("snowpuppycoin-miner");
 
@@ -564,7 +564,7 @@ void static SnowpuppycoinMiner(const CChainParams& chainparams, NodeContext& nod
 
   		  // TODO: either add this function back in, or update this for more appropriate wallet functionality
         // if (!EnsureWalletIsAvailable(pWallet, false)) {
-        //     LogPrintf("SnowpuppycoinMiner -- Wallet not available\n");
+        //     LogPrintf("SnowPuppyCoinMiner -- Wallet not available\n");
         // }
     #endif
 
@@ -621,7 +621,7 @@ void static SnowpuppycoinMiner(const CChainParams& chainparams, NodeContext& nod
 
             if (!pblocktemplate.get()) {
                 LogPrintf(
-                        "SnowpuppycoinMiner -- Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
+                        "SnowPuppyCoinMiner -- Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
                 return;
             }
             CBlock *pblock = &pblocktemplate->block;
@@ -632,7 +632,7 @@ void static SnowpuppycoinMiner(const CChainParams& chainparams, NodeContext& nod
             LogPrintf("Algos: %s\n", hashSelection.getHashSelectionString());
             IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-            LogPrintf("SnowpuppycoinMiner -- Running miner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+            LogPrintf("SnowPuppyCoinMiner -- Running miner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
                       ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
             //
@@ -647,7 +647,7 @@ void static SnowpuppycoinMiner(const CChainParams& chainparams, NodeContext& nod
                     if (UintToArith256(hash) <= hashTarget) {
                         // Found a solution
                         SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                        LogPrintf("SnowpuppycoinMiner:\n  proof-of-work found\n  hash: %s\n  target: %s\n", hash.GetHex(),
+                        LogPrintf("SnowPuppyCoinMiner:\n  proof-of-work found\n  hash: %s\n  target: %s\n", hash.GetHex(),
                                   hashTarget.GetHex());
                         ProcessBlockFound(pblock, chainparams, hash, node);
                         SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -664,7 +664,7 @@ void static SnowpuppycoinMiner(const CChainParams& chainparams, NodeContext& nod
                     if (nHashesDone % 1000 == 0) {   //Calculate hashing speed
                         nHashesPerSec = nHashesDone / (((GetTimeMicros() - nMiningTimeStart) / 1000000.00) + 1);
                         LogPrintf("nNonce: %d, hashRate %f\n", pblock->nNonce, nHashesPerSec);
-                        //LogPrintf("SnowpuppycoinMiner:\n  proof-of-work in progress \n  hash: %s\n  target: %s\n, different=%s\n", hash.GetHex(), hashTarget.GetHex(), (UintToArith256(hash) - hashTarget));
+                        //LogPrintf("SnowPuppyCoinMiner:\n  proof-of-work in progress \n  hash: %s\n  target: %s\n, different=%s\n", hash.GetHex(), hashTarget.GetHex(), (UintToArith256(hash) - hashTarget));
                     }
                     if ((pblock->nNonce & 0xFF) == 0)
                         break;
@@ -694,17 +694,17 @@ void static SnowpuppycoinMiner(const CChainParams& chainparams, NodeContext& nod
         }
     }
     catch (const boost::thread_interrupted &) {
-        LogPrintf("SnowpuppycoinMiner -- terminated\n");
+        LogPrintf("SnowPuppyCoinMiner -- terminated\n");
         throw;
     }
     catch (const std::runtime_error &e) {
-        LogPrintf("SnowpuppycoinMiner -- runtime error: %s\n", e.what());
+        LogPrintf("SnowPuppyCoinMiner -- runtime error: %s\n", e.what());
         return;
     }
 }
 
 // TODO: add reference node, get the conn man from there
-int GenerateSnowpuppycoins(bool fGenerate, int nThreads, const CChainParams &chainparams, NodeContext &node) {
+int GenerateSnowPuppyCoins(bool fGenerate, int nThreads, const CChainParams &chainparams, NodeContext &node) {
     static boost::thread_group *minerThreads = NULL;
 
     int numCores = GetNumCores();
@@ -730,7 +730,7 @@ int GenerateSnowpuppycoins(bool fGenerate, int nThreads, const CChainParams &cha
 
     for (int i = 0; i < nThreads; i++) {
         minerThreads->create_thread(
-                boost::bind(&SnowpuppycoinMiner, boost::cref(chainparams), boost::ref(node)));
+                boost::bind(&SnowPuppyCoinMiner, boost::cref(chainparams), boost::ref(node)));
     }
     return (numCores);
 }

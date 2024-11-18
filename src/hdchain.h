@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2019 The Dash Core developers
-// Copyright (c) 2020-2023 The Snowpuppycoin developers
+// Copyright (c) 2020-2023 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 #ifndef SNOWPUPPYCOIN_HDCHAIN_H
 #define SNOWPUPPYCOIN_HDCHAIN_H
