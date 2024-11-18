@@ -282,7 +282,7 @@ public:
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S(
-                "0x82c552b222cb7a28abefa3287721a34fd6bffbee4ab237366f53d82ef3962b1e"); // block hash for 0
+                "0xed0e2b18f0e86417b292269d5db1ea0d51cda800e75ed9ac35ede321f2e1f0c1"); // block hash for 0
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -299,13 +299,13 @@ public:
         m_assumed_blockchain_size = 7;
         m_assumed_chain_state_size = 2;
 //        FindMainNetGenesisBlock(1730521201, 0x20001fff, "main");
-        genesis = CreateGenesisBlock(1730521201, 543, 0x20001fff, 4, 5000 * COIN);
+        genesis = CreateGenesisBlock(1730521201, 1330, 0x20001fff, 4, 5000 * COIN);
         VerifyGenesisPOW(genesis);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock ==
-               uint256S("0x82c552b222cb7a28abefa3287721a34fd6bffbee4ab237366f53d82ef3962b1e"));
+               uint256S("0xed0e2b18f0e86417b292269d5db1ea0d51cda800e75ed9ac35ede321f2e1f0c1"));
         assert(genesis.hashMerkleRoot ==
-               uint256S("0x6d288e51663d349bd02f5ca221cf87c757c576244d37740dcee2bdadbfb90df8"));
+               uint256S("0xa5ab0646e0c73abeade5fe3142f3d3a4343b85eb43457120c03b33999725addf"));
 
         vSeeds.emplace_back("snowpuppycoin.com");
         vSeeds.emplace_back("0.0.1.1");
@@ -370,7 +370,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("0x82c552b222cb7a28abefa3287721a34fd6bffbee4ab237366f53d82ef3962b1e")}
+                {0, uint256S("0xed0e2b18f0e86417b292269d5db1ea0d51cda800e75ed9ac35ede321f2e1f0c1")}
             }
         };
 
@@ -461,7 +461,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000"); // 0
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xbc25215c11f6ab7549804b6b2f2db4879ada62eb75ff336f014990e151161f4e"); // 0
+        consensus.defaultAssumeValid = uint256S("0x01aa8d03e2dad83a7a092a86134b99f29288d570bb8be68840e695d65fa3e177"); // 0
 
         pchMessageStart[0] = 0x74;
         pchMessageStart[1] = 0x6d;
@@ -470,13 +470,13 @@ public:
         nDefaultPort = 10520;
         nPruneAfterHeight = 1000;
 //        FindTestNetGenesisBlock(1730521202, 0x20001fff, "test");
-        genesis = CreateGenesisBlock(1730521202, 1222, 0x20001fff, 4, 5000 * COIN);
+        genesis = CreateGenesisBlock(1730521202, 1848, 0x20001fff, 4, 5000 * COIN);
         VerifyGenesisPOW(genesis);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock ==
-               uint256S("0xbc25215c11f6ab7549804b6b2f2db4879ada62eb75ff336f014990e151161f4e"));
+               uint256S("0x01aa8d03e2dad83a7a092a86134b99f29288d570bb8be68840e695d65fa3e177"));
         assert(genesis.hashMerkleRoot ==
-               uint256S("0x6d288e51663d349bd02f5ca221cf87c757c576244d37740dcee2bdadbfb90df8"));
+               uint256S("0xa5ab0646e0c73abeade5fe3142f3d3a4343b85eb43457120c03b33999725addf"));
 
         vFixedSeeds.clear();
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
