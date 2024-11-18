@@ -268,9 +268,9 @@ jobs:
           path: ${{ env.TEST_DIR }}
 
   build-macos:
-    name: macOS 14 Build
+    name: macOS 13 Build
     needs: get-version
-    runs-on: macos-14
+    runs-on: macos-13
 
     steps:
       - name: Checkout
