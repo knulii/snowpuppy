@@ -610,10 +610,10 @@ jobs:
 
       - name: Install Required Packages
         run: |
+          sudo apt install python3-requests
           brew install automake libtool pkg-config librsvg libnatpmp python pipx
           pip3 install ds_store mac_alias
           pip3 install -U pip setuptools
-          pip install --break-system-packages requests
 
       - name: Build Depends
         run: |
