@@ -613,8 +613,7 @@ jobs:
           brew install automake libtool pkg-config librsvg libnatpmp python
           pip3 install ds_store mac_alias
           pip3 install -U pip setuptools
-          python3 -m pip install --upgrade setuptools
-          python3.13 -m pip install --upgrade pip
+          brew install pipx
 
       - name: Build Depends
         run: |
