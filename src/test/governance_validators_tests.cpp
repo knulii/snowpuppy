@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2019 The Dash Core developers
-// Copyright (c) 2020-2023 The SnowPuppyCoin developers
+// Copyright (c) 2020-2023 The Raptoreum developers
+// Copyright (c) 2024-2025 The SnowPuppyCoin developers
 
 #include <governance/governance-validators.h>
 #include <util/strencodings.h>
