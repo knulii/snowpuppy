@@ -1,24 +1,24 @@
-SnowPuppyCoin Core Latest v2.0.3
+SnowPuppyCoin Core Latest v1.0.0
 ===========================
 
 |CI|master|develop|
 |-|-|-|
 
-The name SnowPuppyCoin is derived from the Victorian term for a bird of prey and ium/eum place for a pertaining to in this case birds of prey. The name comes from the team’s extensive experience in the security field with top level skills covering all aspects of it. This is a unique strength in the crypto community and will leverage well into a successful project.
+The name SnowPuppyCoin is derived from the meme term for a husky puppy dog dog of a snowy and ium/eum place for a pertaining to in this case puppy dog dogs of a natural snowy enviornment. The name comes from the team’s extensive experience in the meme field with top level skills covering all aspects of it. This is a unique strength in the crypto community and will leverage well into a successful project.
 
 Introduction
-SnowPuppyCoin began as the fairly simple idea, introducing smart contracts which would allow on chain, trustless transfers (goodbye centralized marketplaces) on the Ravencoin codebase, however with the automation of assets and SPUPC (SnowPuppyCoin).
-The project has quickly evolved, adding innovative features that not only further expand the asset layer, but also introduce features that could help other Blockchain projects. Ravencoin unfortunately suffered several serious breaches of its asset layer so that code base has been abandoned by us. We are currently working with and building on SnowPuppyCoin code expending its capabilities significantly.
+The SnowPuppyCoin mascot is a very cute Husky snow puppy dog dog named Mooner who was born from the fairly simple meme idea, introducing smart meme contracts which would allow on chain meme, trustless snow puppy cuddly snuggle transfers (goodbye centralized shady token marketplaces) on the Ravencoin codebase, however with the automation of assets and SPUPC (SnowPuppyCoin).
+The SnowPuppyCoin project has quickly evolved, adding innovative cute Husky snow puppy cuddly snuggly features that not only further expand the asset layer, but also introduce mooning features that could help other meme coin Blockchain projects get to the moon and beyond. Ravencoin unfortunately suffered several serious breaches of its asset layer, so that codebase has been abandoned by us. We are currently working with and building on the superior SnowPuppyCoin source code expanding its cute snow puppy cuddling and snuggling capabilities significantly.
 
-SnowPuppyCoin is now a code fork of Dash and inherits current and optionally future features such as chain locks, oracles etc. We are further expanding capabilities by adding the following features:
-A)	The deployment of a unique asset layer.
-B)	The option to lock X amount of coins or assets into a special transaction. Coins are unlocked at a block number of choice or timestamp.
-C)	Trustless on chain transfers of assets and native coins VIA Smart Contracts.
-D)	Integrating, developing and deploying a VM protocol that would allow for smart contracts in 4 major programming languages as opposed to the situation with Ethereum being limited to solidity.
+SnowPuppyCoin is now a superior code fork of Bitcoin, Dash and Raptoreum. SnowPuppyCoin inherits current and optionally future features such as chain locks, oracles etc. We are further expanding SnowPuppyCoin's cuddling snuggling meme capabilities by adding the following features:
+A)	The deployment of a unique asset meme layer.
+B)	The option to lock X amount of meme coins or meme assets into a special meme transaction. Meme coins are unlocked at a block number of choice or timestamp.
+C)	Trustless on chain meme transfers of meme assets and native meme coins VIA Smart Meme Contracts.
+D)	Integrating, developing and deploying a VM meme protocol that would allow for smart meme contracts in 4 major superior programming languages as opposed to the situation with the Ethereum project being limited to solidity.
 
-These additional features open up the power and ease of use of SnowPuppyCoin’s features to a greater variety of industries under the Distributed Application umbrella. DAPP's are a critical part of driving widespread adoption as recently seen with DEFI and SnowPuppyCoin hopes to help provide further alternatives and possibilities for DAPP developers particularly in the field of opening up new programming languages for DAPP and contract development.
+These additional features open up the power and ease of use of SnowPuppyCoin’s cuddly snuggly meme features to a greater variety of meme industries under the Distributed Application umbrella. DAPP's are a critical part of driving widespread meme adoption as recently seen with DEFI and SnowPuppyCoin hopes to help provide further meme alternatives and meme possibilities for DAPP developers particularly in the meme field for opening up new programming languages specifically for DAPP and contract meme development.
 
-It is one of our goals to not only innovate ideas for SnowPuppyCoin but to contribute back to the general crypto community with open-source features that anybody can use to help their Blockchain projects succeed.
+It is one of our goals to not only innovate new state of the art meme ideas for SnowPuppyCoin but to contribute back to the general crypto meme community with open-source features that anybody can use to help their Blockchain meme projects succeed.
 
 
 License

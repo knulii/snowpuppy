@@ -1,7 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
 // Copyright (c) 2017 The Dash Core developers
-// Copyright (c) 2020-2023 The SnowPuppyCoin developers
+// Copyright (c) 2020-2023 The Raptoreum developers
+// Copyright (c) 2024-2025 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
