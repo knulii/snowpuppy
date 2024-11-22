@@ -340,10 +340,9 @@ public:
                  {500720,  6000000 * COIN},
                  {INT_MAX, 7000000 * COIN}},
                  {{4999,    0},
-                 {INT_MAX, 45}}
+                 {INT_MAX, 80}}
         );
-        //FutureRewardShare defaultShare(0.45, 0.45, 0.1);
-        consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.45, 0.45, 0.1);
+        consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.80, 0.10, 0.10);
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
