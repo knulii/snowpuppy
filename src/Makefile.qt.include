@@ -374,7 +374,7 @@ QT_RES_IMAGES = \
   qt/res/images/radio_normal_disabled_light.png \
   qt/res/images/radio_checked_disabled_light.png \
   qt/res/images/splash_dark.png \
-  qt/res/images/splash_light.png
+  qt/res/images/splash_light.png \
   qt/res/images/bg_dark.png \
   qt/res/images/bg_light.png 
 
