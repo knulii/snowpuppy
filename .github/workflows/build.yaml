@@ -47,7 +47,7 @@ jobs:
               version=${{ steps.versions.outputs.snapshot-version }}
           elif [[ "$GITHUB_EVENT_NAME" != "pull_request" ]] && [[ "$GITHUB_REF" == *"release/"* ]]; then
               version=${{ steps.versions.outputs.candidate-version }}
-          elif [[ "$GITHUB_EVENT_NAME" != "pull_request" ]] && [[ "$GITHUB_REF" == "refs/heads/master" ]]; then
+          elif [[ "$GITHUB_EVENT_NAME" != "pull_request" ]] && [[ "$GITHUB_REF" == "refs/heads/master/main" ]]; then
               version=${{ steps.versions.outputs.release-version }}
           fi
           echo "version is: [$version]"
