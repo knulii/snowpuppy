@@ -2,6 +2,7 @@ name: Snowpuppycoin Build
 on:
   push:
     branches:
+      - main
       - master
       - develop
       - 1.0*
