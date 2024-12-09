@@ -1,7 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2021 The Dash Core developers
-// Copyright (c) 2020-2023 The SnowPuppyCoin developers
+// Copyright (c) 2020-2023 The Raptoreum developers
+// Copyright (c) 2024-2025 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1089,38 +1090,30 @@ GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params &consens
     //     std::cout << "This is Testnet only build" << endl;
     //     exit(1);
     // }
-    double nSubsidy = 5000;      // (declaring the reward variable and its original/default amount)
+    double nSubsidy = 42000;      // (declaring the reward variable and its original/default amount)
     const short owlings = 21262; // amount of blocks between 2 owlings
     int multiplier;              // integer number of owlings
     int tempHeight;              // number of blocks since last anchor
     if (nPrevHeight < 720) {
         nSubsidy = Params().NetworkIDString() == CBaseChainParams::TESTNET ? 20000 : 4;
-    } else if ((nPrevHeight > 553531) && (nPrevHeight < 2105657)) {
-        tempHeight = nPrevHeight - 553532;
-        multiplier = tempHeight / owlings;
-        nSubsidy -= (multiplier * 10 + 10);
-    } else if ((nPrevHeight >= 2105657) && (nPrevHeight < 5273695)) {
-        tempHeight = nPrevHeight - 2105657;
-        multiplier = tempHeight / owlings;
-        nSubsidy -= (multiplier * 20 + 750);
-    } else if ((nPrevHeight >= 5273695) && (nPrevHeight < 7378633)) {
-        tempHeight = nPrevHeight - 5273695;
-        multiplier = tempHeight / owlings;
-        nSubsidy -= (multiplier * 10 + 3720);
-    } else if ((nPrevHeight >= 7378633) && (nPrevHeight < 8399209)) {
-        tempHeight = nPrevHeight - 7378633;
-        multiplier = tempHeight / owlings;
-        nSubsidy -= (multiplier * 5 + 4705);
-    } else if ((nPrevHeight >= 8399209) && (nPrevHeight < 14735285)) {
-        nSubsidy = 55;
-    } else if ((nPrevHeight >= 14735285) && (nPrevHeight < 15798385)) {
-        tempHeight = nPrevHeight - 14735285;
-        multiplier = tempHeight / owlings;
-        nSubsidy -= (multiplier + 4946);
-    } else if ((nPrevHeight >= 15798385) && (nPrevHeight < 25844304)) {
-        nSubsidy = 5;
-    } else if (nPrevHeight >= 25844304) {
-        nSubsidy = 0.001;
+    } else if ((nPrevHeight >= 250000) && (nPrevHeight < 500000)) {
+        nSubsidy = 21000;
+    } else if ((nPrevHeight >= 500000) && (nPrevHeight < 750000)) {
+        nSubsidy = 10500;
+    } else if ((nPrevHeight >= 750000) && (nPrevHeight < 1000000)) {
+        nSubsidy = 5250;
+    } else if ((nPrevHeight >= 1000000) && (nPrevHeight < 1250000)) {
+        nSubsidy = 2625;
+    } else if ((nPrevHeight >= 1250000) && (nPrevHeight < 1500000)) {
+        nSubsidy = 1312;
+    } else if ((nPrevHeight >= 1500000) && (nPrevHeight < 1750000)) {
+        nSubsidy = 656;
+    } else if ((nPrevHeight >= 1750000) && (nPrevHeight < 2000000)) {
+        nSubsidy = 328;
+    } else if ((nPrevHeight >= 2000000) && (nPrevHeight < 300000)) {
+        nSubsidy = 165;
+    } else if (nPrevHeight >= 3000000) {
+        nSubsidy = 100;
     }
     return nSubsidy * COIN;
 }

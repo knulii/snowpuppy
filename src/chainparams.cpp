@@ -1,7 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2023 The SnowPuppyCoin developers
+// Copyright (c) 2020-2023 The Raptoreum developers
+// Copyright (c) 2024-2025 The SnowPuppyCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -324,25 +325,20 @@ public:
         std::string strExtCoinType = gArgs.GetArg("-extcoinindex", "");
         nExtCoinType = strExtCoinType.empty() ? 200 : std::stoi(strExtCoinType);
 
-        std::vector <FounderRewardStructure> rewardStructures = {{INT_MAX, 10}};// 10% founder/dev fee forever
+        std::vector <FounderRewardStructure> rewardStructures = {{INT_MAX, 20}};// 20% founder/dev fee forever
         consensus.nFounderPayment = FounderPayment(rewardStructures, 100);
         consensus.nCollaterals = SmartnodeCollaterals(
-                 {{4999,     10000 * COIN},
-                 {88720,    600000 * COIN},
-                 {132720,   800000 * COIN},
-                 {176720,  1200000 * COIN},
-                 {220720,  1800000 * COIN},
-                 {264720,  2400000 * COIN},
-                 {332720,  3000000 * COIN},
-                 {390720,  4000000 * COIN},
-                 {440720,  5000000 * COIN},
-                 {500720,  6000000 * COIN},
-                 {INT_MAX, 7000000 * COIN}},
+                 {{4999,     100000 * COIN},
+                 {100000,   5000000 * COIN},
+                 {200000,  10000000 * COIN},
+                 {300000,  25000000 * COIN},
+                 {400000,  50000000 * COIN},
+                 {500000,  10000000 * COIN},
+                 {INT_MAX, 21000000 * COIN}},
                  {{4999,    0},
-                 {INT_MAX, 45}}
+                 {INT_MAX, 70}}
         );
-        //FutureRewardShare defaultShare(0.45, 0.45, 0.1);
-        consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.45, 0.45, 0.1);
+        consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.70, 0.10, 0.20);
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 

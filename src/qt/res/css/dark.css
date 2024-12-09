@@ -49,6 +49,9 @@ QMainWindow,
 QMessageBox
 WalletFrame {
     background-color: #1B1F2C;
+    background-image: url(':/images/bg_dark');
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 QWidget { /* override text selection background color for all text widgets */

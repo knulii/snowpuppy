@@ -152,6 +152,8 @@
         <file alias="radio_checked_disabled_light">res/images/radio_checked_disabled_light.png</file>
         <file alias="splash_dark">res/images/splash_dark.png</file>
         <file alias="splash_light">res/images/splash_light.png</file>
+        <file alias="bg_dark">res/images/bg_dark.png</file>
+        <file alias="bg_light">res/images/bg_light.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="spinner-000">res/movies/spinner-000.png</file>
