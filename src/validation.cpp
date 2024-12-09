@@ -1090,30 +1090,30 @@ GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params &consens
     //     std::cout << "This is Testnet only build" << endl;
     //     exit(1);
     // }
-    double nSubsidy = 22000;      // (declaring the reward variable and its original/default amount)
+    double nSubsidy = 42000;      // (declaring the reward variable and its original/default amount)
     const short owlings = 21262; // amount of blocks between 2 owlings
     int multiplier;              // integer number of owlings
     int tempHeight;              // number of blocks since last anchor
     if (nPrevHeight < 720) {
         nSubsidy = Params().NetworkIDString() == CBaseChainParams::TESTNET ? 20000 : 4;
-    } else if ((nPrevHeight >= 500000) && (nPrevHeight < 1000000)) {
-        nSubsidy = 10000;
-    } else if ((nPrevHeight >= 1000000) && (nPrevHeight < 1500000)) {
-        nSubsidy = 5000;
-    } else if ((nPrevHeight >= 1500000) && (nPrevHeight < 2000000)) {
-        nSubsidy = 2500;
-    } else if ((nPrevHeight >= 1000000) && (nPrevHeight < 1500000)) {
-        nSubsidy = 1250;
-    } else if ((nPrevHeight >= 1500000) && (nPrevHeight < 2000000)) {
-        nSubsidy = 625;
-    } else if ((nPrevHeight >= 1000000) && (nPrevHeight < 1500000)) {
-        nSubsidy = 312.5;
-    } else if ((nPrevHeight >= 1500000) && (nPrevHeight < 2000000)) {
-        nSubsidy = 156.25;
-    } else if ((nPrevHeight >= 2000000) && (nPrevHeight < 2500000)) {
-        nSubsidy = 75;
-    } else if (nPrevHeight >= 2500000) {
-        nSubsidy = 50;
+    } else if ((nPrevHeight >= 250000) && (nPrevHeight < 500000)) {
+        nSubsidy = 21000;
+    } else if ((nPrevHeight >= 500000) && (nPrevHeight < 750000)) {
+        nSubsidy = 10500;
+    } else if ((nPrevHeight >= 750000) && (nPrevHeight < 1000000)) {
+        nSubsidy = 5250;
+    } else if ((nPrevHeight >= 1000000) && (nPrevHeight < 1250000)) {
+        nSubsidy = 2625;
+    } else if ((nPrevHeight >= 1250000) && (nPrevHeight < 1500000)) {
+        nSubsidy = 1312;
+    } else if ((nPrevHeight >= 1500000) && (nPrevHeight < 1750000)) {
+        nSubsidy = 656;
+    } else if ((nPrevHeight >= 1750000) && (nPrevHeight < 2000000)) {
+        nSubsidy = 328;
+    } else if ((nPrevHeight >= 2000000) && (nPrevHeight < 300000)) {
+        nSubsidy = 165;
+    } else if (nPrevHeight >= 3000000) {
+        nSubsidy = 100;
     }
     return nSubsidy * COIN;
 }
